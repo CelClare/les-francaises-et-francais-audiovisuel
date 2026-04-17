@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.core.database import get_db
 from app.models.test_model import TestItem
-from app.models.test_schema import TestItemCreate, TestItemRead
+from app.schemas.test_schema import TestItemCreate, TestItemRead
 
 router = APIRouter()
 
