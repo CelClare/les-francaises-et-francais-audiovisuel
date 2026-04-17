@@ -18,6 +18,38 @@ def clean_stats(df: pd.DataFrame) -> pd.DataFrame:
         df["male_duration"] / df["total_gender_duration"],
         np.nan,
     )
+
+    CHANNEL_CATEGORY_MAP = {
+    "BFM TV": "Information",
+    "LCI": "Information",
+    "I-Télé/CNews": "Information",
+    "Euronews": "Information",
+    "France 24": "Information",
+    "Canal+ Sport": "Sport",
+    "L'Equipe 21": "Sport",
+    "Eurosport France": "Sport",
+    "Animaux": "Animaux / Nature",
+    "Chasse et pêche": "Animaux / Nature",
+    "Voyage": "Voyage / Découverte",
+    "Planète+": "Documentaire / Découverte",
+    "Toute l'Histoire": "Documentaire / Histoire",
+    "Histoire": "Documentaire / Histoire",
+    "TF1": "Généraliste",
+    "France 2": "Généraliste",
+    "France 3": "Généraliste",
+    "France 5": "Généraliste",
+    "M6": "Généraliste",
+    "W9": "Généraliste",
+    "Monte Carlo TMC": "Généraliste",
+    "Canal+": "Généraliste",
+    "Chérie 25": "Généraliste",
+    "NRJ 12": "Généraliste",
+    "France O": "Généraliste",
+    "TV Breizh": "Généraliste",
+    "La chaîne Météo": "Information",
+}
+
+    df["channel_category"] = df["channel_name"].map(CHANNEL_CATEGORY_MAP).fillna("Autre")
     columns_to_keep = [
         "channel_code",
         "channel_name",
@@ -31,6 +63,7 @@ def clean_stats(df: pd.DataFrame) -> pd.DataFrame:
         "total_gender_duration",
         "female_share",
         "male_share",
+        "channel_category",
     ]
 
     return df[columns_to_keep]
