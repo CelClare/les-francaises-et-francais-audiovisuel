@@ -1,11 +1,37 @@
 from pathlib import Path
+import os
 import pandas as pd
+import requests
 import streamlit as st
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 PROCESSED_DIR = BASE_DIR / "data" / "processed"
 
+API_BASE_URL = os.getenv(
+    "API_BASE_URL",
+    "https://les-francaises-et-francais-audiovisuel.onrender.com/api/v1"
+)
+API_KEY = os.getenv("API_KEY", "")
+
+def fetch_api_data(endpoint: str, params: dict | None = None) -> pd.DataFrame:
+    headers = {}
+    if API_KEY:
+        headers["X-API-Key"] = API_KEY
+
+    response = requests.get(
+        f"{API_BASE_URL}{endpoint}",
+        headers=headers,
+        params=params,
+        timeout=60,
+    )
+    response.raise_for_status()
+    data = response.json()
+    return pd.DataFrame(data)
+
+# Fallback pour le développement local sans accès à l'API
+def load_csv_fallback(filename: str) -> pd.DataFrame:
+    return pd.read_csv(PROCESSED_DIR / filename)
 
 def inject_global_css() -> None:
     st.markdown(
@@ -187,31 +213,38 @@ HEATMAP_SCALE = [
 
 @st.cache_data
 def load_data():
+
+    # Certaines tables sont récupérées via l’API déployée.
+    # En cas d’indisponibilité de l’API, un fallback CSV est utilisé.
+
     # Représentation femmes / hommes
-    gender_year_channel = pd.read_csv(PROCESSED_DIR / "tv_gender_by_year_channel.csv")
-    gender_year_public_private = pd.read_csv(
-        PROCESSED_DIR / "tv_gender_by_year_public_private.csv"
-    )
-    gender_year_category = pd.read_csv(
-        PROCESSED_DIR / "tv_gender_by_year_category.csv"
-    )
-    gender_public_private_global = pd.read_csv(
-        PROCESSED_DIR / "tv_gender_public_private_global.csv"
-    )
+    try:
+        gender_year_channel = fetch_api_data("/gender/year-channel")
+    except Exception:
+        gender_year_channel = load_csv_fallback("tv_gender_by_year_channel.csv")
+
+    try:
+        gender_year_public_private = fetch_api_data("/gender/public-private")
+    except Exception:
+        gender_year_public_private = load_csv_fallback("tv_gender_by_year_public_private.csv")
+
+    gender_year_category = load_csv_fallback("tv_gender_by_year_category.csv")
+    gender_public_private_global = load_csv_fallback("tv_gender_public_private_global.csv")
 
     # Thématiques JT
-    jt_year_channel_theme = pd.read_csv(
-        PROCESSED_DIR / "jt_topics_by_year_channel_theme.csv"
-    )
-    jt_year_theme = pd.read_csv(PROCESSED_DIR / "jt_topics_by_year_theme.csv")
-    jt_topics_global = pd.read_csv(PROCESSED_DIR / "jt_topics_global.csv")
-    jt_theme_volatility = pd.read_csv(PROCESSED_DIR / "jt_theme_volatility.csv")
+    jt_year_channel_theme = load_csv_fallback("jt_topics_by_year_channel_theme.csv")
+
+    try:
+        jt_year_theme = fetch_api_data("/jt/topics/year-theme")
+    except Exception:
+        jt_year_theme = load_csv_fallback("jt_topics_by_year_theme.csv")
+
+    jt_topics_global = load_csv_fallback("jt_topics_global.csv")
+    jt_theme_volatility = load_csv_fallback("jt_theme_volatility.csv")
 
     # Croisement exploratoire thème × genre
-    theme_gender_proxy = pd.read_csv(PROCESSED_DIR / "theme_gender_proxy.csv")
-    theme_gender_proxy_by_theme = pd.read_csv(
-        PROCESSED_DIR / "theme_gender_proxy_by_theme.csv"
-    )
+    theme_gender_proxy = load_csv_fallback("theme_gender_proxy.csv")
+    theme_gender_proxy_by_theme = load_csv_fallback("theme_gender_proxy_by_theme.csv")
 
     return (
         gender_year_channel,
@@ -223,7 +256,7 @@ def load_data():
         jt_topics_global,
         theme_gender_proxy,
         theme_gender_proxy_by_theme,
-        jt_theme_volatility
+        jt_theme_volatility,
     )
 
 
