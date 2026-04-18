@@ -1,0 +1,1471 @@
+year,channel_name,theme,total_subjects,total_duration,n_days
+2000,Arte,Catastrophes,133,9328,104
+2000,Arte,Culture-loisirs,313,53981,253
+2000,Arte,Economie,308,34342,190
+2000,Arte,Education,25,3641,21
+2000,Arte,Environnement,123,15859,103
+2000,Arte,Faits divers,29,2170,26
+2000,Arte,Histoire-hommages,65,7737,58
+2000,Arte,International,1714,158267,362
+2000,Arte,Justice,276,22895,177
+2000,Arte,Politique France,181,15675,144
+2000,Arte,Santé,45,4909,38
+2000,Arte,Sciences et techniques,67,5412,57
+2000,Arte,Société,600,65345,285
+2000,Arte,Sport,42,5411,36
+2000,France 2,Catastrophes,338,29720,169
+2000,France 2,Culture-loisirs,591,72162,313
+2000,France 2,Economie,449,45232,234
+2000,France 2,Education,112,11926,85
+2000,France 2,Environnement,340,32097,197
+2000,France 2,Faits divers,157,12841,119
+2000,France 2,Histoire-hommages,82,8826,59
+2000,France 2,International,1142,101470,342
+2000,France 2,Justice,465,42860,243
+2000,France 2,Politique France,572,57655,272
+2000,France 2,Santé,208,21393,142
+2000,France 2,Sciences et techniques,108,10742,87
+2000,France 2,Société,1207,109382,342
+2000,France 2,Sport,685,54939,309
+2000,France 3,Catastrophes,204,17890,123
+2000,France 3,Culture-loisirs,299,32422,226
+2000,France 3,Economie,284,27898,181
+2000,France 3,Education,75,8140,60
+2000,France 3,Environnement,197,18060,139
+2000,France 3,Faits divers,116,10471,99
+2000,France 3,Histoire-hommages,47,4437,38
+2000,France 3,International,661,58104,300
+2000,France 3,Justice,330,32639,197
+2000,France 3,Politique France,352,32780,220
+2000,France 3,Santé,138,14200,108
+2000,France 3,Sciences et techniques,107,10293,86
+2000,France 3,Société,906,82191,335
+2000,France 3,Sport,425,34460,241
+2000,M6,Catastrophes,221,13097,149
+2000,M6,Culture-loisirs,333,22807,238
+2000,M6,Economie,321,18896,209
+2000,M6,Education,113,8176,88
+2000,M6,Environnement,271,15171,198
+2000,M6,Faits divers,157,7983,126
+2000,M6,Histoire-hommages,40,1896,36
+2000,M6,International,398,18836,263
+2000,M6,Justice,251,11885,179
+2000,M6,Politique France,213,10904,174
+2000,M6,Santé,138,8318,115
+2000,M6,Sciences et techniques,132,6564,112
+2000,M6,Société,956,53159,342
+2000,M6,Sport,581,32900,313
+2000,TF1,Catastrophes,490,44413,219
+2000,TF1,Culture-loisirs,579,60076,283
+2000,TF1,Economie,601,54164,271
+2000,TF1,Education,200,19127,137
+2000,TF1,Environnement,585,51800,266
+2000,TF1,Faits divers,195,17242,142
+2000,TF1,Histoire-hommages,74,6773,59
+2000,TF1,International,815,72154,324
+2000,TF1,Justice,437,39835,229
+2000,TF1,Politique France,446,50723,246
+2000,TF1,Santé,337,33334,217
+2000,TF1,Sciences et techniques,159,14335,122
+2000,TF1,Société,1725,155164,359
+2000,TF1,Sport,759,64554,314
+2001,Arte,Catastrophes,163,9129,124
+2001,Arte,Culture-loisirs,353,54753,277
+2001,Arte,Economie,252,21787,169
+2001,Arte,Education,21,3465,17
+2001,Arte,Environnement,111,9632,87
+2001,Arte,Faits divers,31,1667,30
+2001,Arte,Histoire-hommages,78,7753,62
+2001,Arte,International,1943,166109,364
+2001,Arte,Justice,260,20051,171
+2001,Arte,Politique France,237,22998,166
+2001,Arte,Santé,71,7131,52
+2001,Arte,Sciences et techniques,90,7554,77
+2001,Arte,Société,850,75731,324
+2001,Arte,Sport,26,2292,21
+2001,France 2,Catastrophes,398,34978,191
+2001,France 2,Culture-loisirs,583,66802,311
+2001,France 2,Economie,379,34240,229
+2001,France 2,Education,104,10829,79
+2001,France 2,Environnement,221,19081,154
+2001,France 2,Faits divers,238,20668,162
+2001,France 2,Histoire-hommages,125,12077,82
+2001,France 2,International,1690,159430,340
+2001,France 2,Justice,549,50982,253
+2001,France 2,Politique France,719,75481,295
+2001,France 2,Santé,232,22427,159
+2001,France 2,Sciences et techniques,145,12696,115
+2001,France 2,Société,1597,141180,354
+2001,France 2,Sport,637,50485,327
+2001,France 3,Catastrophes,218,19164,136
+2001,France 3,Culture-loisirs,305,32017,210
+2001,France 3,Economie,235,23443,161
+2001,France 3,Education,49,5319,41
+2001,France 3,Environnement,112,9162,86
+2001,France 3,Faits divers,114,10858,94
+2001,France 3,Histoire-hommages,76,8019,61
+2001,France 3,International,985,99736,284
+2001,France 3,Justice,395,38295,218
+2001,France 3,Politique France,428,42051,235
+2001,France 3,Santé,102,10775,87
+2001,France 3,Sciences et techniques,97,9352,85
+2001,France 3,Société,925,85964,316
+2001,France 3,Sport,344,26513,197
+2001,M6,Catastrophes,280,18768,177
+2001,M6,Culture-loisirs,316,22116,212
+2001,M6,Economie,282,16476,195
+2001,M6,Education,91,6375,80
+2001,M6,Environnement,168,9756,136
+2001,M6,Faits divers,173,9399,139
+2001,M6,Histoire-hommages,52,4165,42
+2001,M6,International,431,31988,238
+2001,M6,Justice,289,15179,187
+2001,M6,Politique France,195,12790,148
+2001,M6,Santé,124,8307,105
+2001,M6,Sciences et techniques,145,8474,122
+2001,M6,Société,992,60670,344
+2001,M6,Sport,388,18956,250
+2001,TF1,Catastrophes,525,47171,228
+2001,TF1,Culture-loisirs,461,44963,276
+2001,TF1,Economie,443,39154,258
+2001,TF1,Education,152,14440,122
+2001,TF1,Environnement,368,32171,210
+2001,TF1,Faits divers,249,22864,161
+2001,TF1,Histoire-hommages,111,11655,75
+2001,TF1,International,1471,143889,318
+2001,TF1,Justice,560,52622,268
+2001,TF1,Politique France,587,56948,274
+2001,TF1,Santé,305,29002,205
+2001,TF1,Sciences et techniques,204,17783,155
+2001,TF1,Société,1881,165640,362
+2001,TF1,Sport,583,44509,290
+2002,Arte,Catastrophes,129,8662,106
+2002,Arte,Culture-loisirs,351,52592,275
+2002,Arte,Economie,225,18800,156
+2002,Arte,Education,20,2719,19
+2002,Arte,Environnement,99,8802,79
+2002,Arte,Faits divers,33,2853,28
+2002,Arte,Histoire-hommages,57,5059,45
+2002,Arte,International,1763,140942,361
+2002,Arte,Justice,222,15364,158
+2002,Arte,Politique France,296,30417,181
+2002,Arte,Santé,50,4867,44
+2002,Arte,Sciences et techniques,55,4536,51
+2002,Arte,Société,703,60436,307
+2002,Arte,Sport,36,2439,30
+2002,France 2,Catastrophes,396,29965,195
+2002,France 2,Culture-loisirs,641,63796,305
+2002,France 2,Economie,613,52697,285
+2002,France 2,Education,182,16424,119
+2002,France 2,Environnement,365,36279,195
+2002,France 2,Faits divers,331,25771,201
+2002,France 2,Histoire-hommages,115,10388,79
+2002,France 2,International,1215,98526,348
+2002,France 2,Justice,583,47774,249
+2002,France 2,Politique France,1178,101567,332
+2002,France 2,Santé,286,24373,185
+2002,France 2,Sciences et techniques,223,17665,159
+2002,France 2,Société,1866,147357,353
+2002,France 2,Sport,712,49062,315
+2002,France 3,Catastrophes,208,16531,132
+2002,France 3,Culture-loisirs,337,37629,224
+2002,France 3,Economie,316,31520,182
+2002,France 3,Education,80,8661,65
+2002,France 3,Environnement,161,14849,119
+2002,France 3,Faits divers,200,17598,139
+2002,France 3,Histoire-hommages,65,6543,48
+2002,France 3,International,792,71113,300
+2002,France 3,Justice,360,33393,214
+2002,France 3,Politique France,691,74073,267
+2002,France 3,Santé,117,11572,95
+2002,France 3,Sciences et techniques,94,9914,79
+2002,France 3,Société,936,86943,311
+2002,France 3,Sport,377,28445,215
+2002,M6,Catastrophes,210,13239,163
+2002,M6,Culture-loisirs,300,19673,224
+2002,M6,Economie,239,14834,176
+2002,M6,Education,105,8466,89
+2002,M6,Environnement,176,10768,131
+2002,M6,Faits divers,189,12170,136
+2002,M6,Histoire-hommages,43,2954,35
+2002,M6,International,354,18513,236
+2002,M6,Justice,262,14639,185
+2002,M6,Politique France,369,30520,222
+2002,M6,Santé,116,7936,98
+2002,M6,Sciences et techniques,99,5549,90
+2002,M6,Société,808,50165,318
+2002,M6,Sport,354,17289,233
+2002,TF1,Catastrophes,478,39176,225
+2002,TF1,Culture-loisirs,524,45926,275
+2002,TF1,Economie,534,45122,277
+2002,TF1,Education,205,19020,147
+2002,TF1,Environnement,504,42050,241
+2002,TF1,Faits divers,360,31586,199
+2002,TF1,Histoire-hommages,83,7156,64
+2002,TF1,International,961,81928,330
+2002,TF1,Justice,523,47981,265
+2002,TF1,Politique France,966,92946,322
+2002,TF1,Santé,320,29089,225
+2002,TF1,Sciences et techniques,202,16603,152
+2002,TF1,Société,2016,177869,357
+2002,TF1,Sport,666,52545,297
+2003,Arte,Catastrophes,92,4533,75
+2003,Arte,Culture-loisirs,355,55066,274
+2003,Arte,Economie,142,13880,111
+2003,Arte,Education,39,4161,33
+2003,Arte,Environnement,97,8354,75
+2003,Arte,Faits divers,38,2100,34
+2003,Arte,Histoire-hommages,46,4810,36
+2003,Arte,International,2068,190875,353
+2003,Arte,Justice,158,8988,124
+2003,Arte,Politique France,128,10365,95
+2003,Arte,Santé,102,7174,84
+2003,Arte,Sciences et techniques,72,5321,64
+2003,Arte,Société,599,57469,281
+2003,Arte,Sport,32,3609,27
+2003,France 2,Catastrophes,440,33981,193
+2003,France 2,Culture-loisirs,613,58151,309
+2003,France 2,Economie,486,40904,253
+2003,France 2,Education,249,21324,136
+2003,France 2,Environnement,508,38622,234
+2003,France 2,Faits divers,321,25798,200
+2003,France 2,Histoire-hommages,88,7069,68
+2003,France 2,International,1919,163391,349
+2003,France 2,Justice,425,32939,226
+2003,France 2,Politique France,568,47009,277
+2003,France 2,Santé,366,32135,220
+2003,France 2,Sciences et techniques,243,18410,157
+2003,France 2,Société,1969,161501,349
+2003,France 2,Sport,566,36908,300
+2003,France 3,Catastrophes,256,21854,143
+2003,France 3,Culture-loisirs,349,34804,245
+2003,France 3,Economie,298,28477,183
+2003,France 3,Education,115,11278,75
+2003,France 3,Environnement,226,19208,135
+2003,France 3,Faits divers,188,16985,130
+2003,France 3,Histoire-hommages,40,4177,35
+2003,France 3,International,1350,123458,331
+2003,France 3,Justice,288,24776,180
+2003,France 3,Politique France,370,35287,211
+2003,France 3,Santé,175,18423,134
+2003,France 3,Sciences et techniques,95,8914,82
+2003,France 3,Société,1075,102565,327
+2003,France 3,Sport,304,22018,202
+2003,M6,Catastrophes,175,12866,136
+2003,M6,Culture-loisirs,245,15203,192
+2003,M6,Economie,198,11983,150
+2003,M6,Education,132,10827,108
+2003,M6,Environnement,203,14081,158
+2003,M6,Faits divers,235,14330,154
+2003,M6,Histoire-hommages,26,2217,26
+2003,M6,International,447,30353,252
+2003,M6,Justice,209,12409,158
+2003,M6,Politique France,152,10220,117
+2003,M6,Santé,160,12493,127
+2003,M6,Sciences et techniques,82,5635,67
+2003,M6,Société,777,53317,318
+2003,M6,Sport,251,11125,188
+2003,TF1,Catastrophes,516,43045,231
+2003,TF1,Culture-loisirs,490,42563,272
+2003,TF1,Economie,526,44062,256
+2003,TF1,Education,243,20862,145
+2003,TF1,Environnement,666,56385,274
+2003,TF1,Faits divers,348,30223,215
+2003,TF1,Histoire-hommages,64,4983,53
+2003,TF1,International,1720,154357,355
+2003,TF1,Justice,429,35000,243
+2003,TF1,Politique France,474,42217,253
+2003,TF1,Santé,452,41133,241
+2003,TF1,Sciences et techniques,241,19777,165
+2003,TF1,Société,1961,168091,351
+2003,TF1,Sport,468,33219,288
+2004,Arte,Catastrophes,129,7599,90
+2004,Arte,Culture-loisirs,55,3819,52
+2004,Arte,Economie,138,10992,116
+2004,Arte,Education,22,2488,21
+2004,Arte,Environnement,39,2915,37
+2004,Arte,Faits divers,41,1776,36
+2004,Arte,Histoire-hommages,125,11453,74
+2004,Arte,International,1884,143905,365
+2004,Arte,Justice,178,11283,141
+2004,Arte,Politique France,124,9961,90
+2004,Arte,Santé,50,4077,44
+2004,Arte,Sciences et techniques,63,4221,58
+2004,Arte,Société,499,38262,276
+2004,Arte,Sport,31,2302,28
+2004,France 2,Catastrophes,504,40571,204
+2004,France 2,Culture-loisirs,652,66455,314
+2004,France 2,Economie,531,49054,273
+2004,France 2,Education,175,16329,122
+2004,France 2,Environnement,283,22952,185
+2004,France 2,Faits divers,354,28945,211
+2004,France 2,Histoire-hommages,278,26649,132
+2004,France 2,International,1659,140493,356
+2004,France 2,Justice,579,47714,257
+2004,France 2,Politique France,570,50373,248
+2004,France 2,Santé,353,31549,221
+2004,France 2,Sciences et techniques,268,20952,182
+2004,France 2,Société,1660,137616,351
+2004,France 2,Sport,675,48118,314
+2004,France 3,Catastrophes,258,22166,129
+2004,France 3,Culture-loisirs,348,37338,251
+2004,France 3,Economie,258,25733,175
+2004,France 3,Education,67,6857,61
+2004,France 3,Environnement,93,7333,71
+2004,France 3,Faits divers,255,23652,177
+2004,France 3,Histoire-hommages,148,14434,90
+2004,France 3,International,1159,104569,341
+2004,France 3,Justice,433,39402,240
+2004,France 3,Politique France,421,40424,213
+2004,France 3,Santé,172,18496,130
+2004,France 3,Sciences et techniques,100,9841,83
+2004,France 3,Société,956,90188,334
+2004,France 3,Sport,342,26316,217
+2004,M6,Catastrophes,192,14860,136
+2004,M6,Culture-loisirs,223,11183,187
+2004,M6,Economie,194,12115,150
+2004,M6,Education,88,7303,81
+2004,M6,Environnement,94,5178,85
+2004,M6,Faits divers,229,15480,178
+2004,M6,Histoire-hommages,79,9336,52
+2004,M6,International,460,29511,257
+2004,M6,Justice,291,18601,199
+2004,M6,Politique France,225,17285,145
+2004,M6,Santé,154,11141,124
+2004,M6,Sciences et techniques,73,3912,67
+2004,M6,Société,764,48861,309
+2004,M6,Sport,249,10364,192
+2004,TF1,Catastrophes,394,33700,184
+2004,TF1,Culture-loisirs,452,39715,238
+2004,TF1,Economie,568,47327,253
+2004,TF1,Education,183,16626,128
+2004,TF1,Environnement,312,25124,174
+2004,TF1,Faits divers,282,23862,171
+2004,TF1,Histoire-hommages,215,20781,110
+2004,TF1,International,1138,94211,292
+2004,TF1,Justice,477,42190,221
+2004,TF1,Politique France,437,38944,215
+2004,TF1,Santé,382,33614,211
+2004,TF1,Sciences et techniques,251,20683,165
+2004,TF1,Société,1679,137994,295
+2004,TF1,Sport,508,37814,253
+2005,Arte,Catastrophes,230,16097,148
+2005,Arte,Culture-loisirs,40,4276,33
+2005,Arte,Economie,136,9218,112
+2005,Arte,Education,28,1895,25
+2005,Arte,Environnement,77,5485,65
+2005,Arte,Faits divers,34,2178,29
+2005,Arte,Histoire-hommages,98,9742,62
+2005,Arte,International,1783,138538,357
+2005,Arte,Justice,153,9052,112
+2005,Arte,Politique France,85,7381,67
+2005,Arte,Santé,97,7360,72
+2005,Arte,Sciences et techniques,50,3295,47
+2005,Arte,Société,554,44830,265
+2005,Arte,Sport,17,821,17
+2005,France 2,Catastrophes,747,62296,237
+2005,France 2,Culture-loisirs,713,74027,336
+2005,France 2,Economie,524,50145,263
+2005,France 2,Education,198,18567,137
+2005,France 2,Environnement,410,33451,202
+2005,France 2,Faits divers,250,21277,171
+2005,France 2,Histoire-hommages,198,18936,123
+2005,France 2,International,1286,104888,341
+2005,France 2,Justice,423,36202,239
+2005,France 2,Politique France,344,28184,198
+2005,France 2,Santé,411,37330,214
+2005,France 2,Sciences et techniques,230,20033,163
+2005,France 2,Société,1885,163574,355
+2005,France 2,Sport,618,41658,303
+2005,France 3,Catastrophes,400,35218,176
+2005,France 3,Culture-loisirs,372,41331,259
+2005,France 3,Economie,319,32975,211
+2005,France 3,Education,112,11689,87
+2005,France 3,Environnement,167,14292,119
+2005,France 3,Faits divers,185,16395,132
+2005,France 3,Histoire-hommages,136,14395,92
+2005,France 3,International,897,85950,307
+2005,France 3,Justice,345,31980,213
+2005,France 3,Politique France,287,28995,176
+2005,France 3,Santé,249,25482,163
+2005,France 3,Sciences et techniques,108,9442,89
+2005,France 3,Société,1200,116383,333
+2005,France 3,Sport,351,26016,222
+2005,M6,Catastrophes,299,23917,179
+2005,M6,Culture-loisirs,289,24058,214
+2005,M6,Economie,176,10896,146
+2005,M6,Education,91,7279,76
+2005,M6,Environnement,126,7945,105
+2005,M6,Faits divers,138,8276,116
+2005,M6,Histoire-hommages,82,6130,63
+2005,M6,International,432,25147,258
+2005,M6,Justice,181,11266,142
+2005,M6,Politique France,135,8974,104
+2005,M6,Santé,176,11728,133
+2005,M6,Sciences et techniques,83,5481,76
+2005,M6,Société,838,59070,325
+2005,M6,Sport,443,23364,274
+2005,TF1,Catastrophes,796,69052,244
+2005,TF1,Culture-loisirs,516,46694,282
+2005,TF1,Economie,681,58256,302
+2005,TF1,Education,227,20590,159
+2005,TF1,Environnement,499,40620,246
+2005,TF1,Faits divers,239,20592,165
+2005,TF1,Histoire-hommages,186,16393,116
+2005,TF1,International,1090,93949,343
+2005,TF1,Justice,426,35973,215
+2005,TF1,Politique France,375,31960,209
+2005,TF1,Santé,445,38664,235
+2005,TF1,Sciences et techniques,266,22092,178
+2005,TF1,Société,2154,187909,358
+2005,TF1,Sport,584,42541,304
+2006,Arte,Catastrophes,104,5993,92
+2006,Arte,Culture-loisirs,35,2864,34
+2006,Arte,Economie,163,12115,129
+2006,Arte,Education,31,2788,29
+2006,Arte,Environnement,111,7740,97
+2006,Arte,Faits divers,49,3406,44
+2006,Arte,Histoire-hommages,61,3953,55
+2006,Arte,International,1732,135159,364
+2006,Arte,Justice,245,16183,175
+2006,Arte,Politique France,156,13186,122
+2006,Arte,Santé,138,11208,101
+2006,Arte,Sciences et techniques,82,4850,71
+2006,Arte,Société,590,47355,300
+2006,Arte,Sport,74,6595,51
+2006,France 2,Catastrophes,260,19478,170
+2006,France 2,Culture-loisirs,710,73632,337
+2006,France 2,Economie,513,49052,256
+2006,France 2,Education,228,22926,154
+2006,France 2,Environnement,367,28711,214
+2006,France 2,Faits divers,269,22822,175
+2006,France 2,Histoire-hommages,107,9862,77
+2006,France 2,International,954,74745,335
+2006,France 2,Justice,507,44995,242
+2006,France 2,Politique France,437,39420,227
+2006,France 2,Santé,438,39454,224
+2006,France 2,Sciences et techniques,223,19783,159
+2006,France 2,Société,1638,146196,361
+2006,France 2,Sport,836,60413,325
+2006,France 3,Catastrophes,161,11626,120
+2006,France 3,Culture-loisirs,400,42617,271
+2006,France 3,Economie,309,31039,202
+2006,France 3,Education,111,11896,88
+2006,France 3,Environnement,215,18990,147
+2006,France 3,Faits divers,213,17840,151
+2006,France 3,Histoire-hommages,79,7585,55
+2006,France 3,International,731,69003,306
+2006,France 3,Justice,444,43056,246
+2006,France 3,Politique France,388,39645,222
+2006,France 3,Santé,277,27362,184
+2006,France 3,Sciences et techniques,139,12308,110
+2006,France 3,Société,1167,113601,346
+2006,France 3,Sport,456,36380,245
+2006,M6,Catastrophes,133,8596,110
+2006,M6,Culture-loisirs,229,19638,187
+2006,M6,Economie,164,12384,127
+2006,M6,Education,86,7894,74
+2006,M6,Environnement,112,6615,103
+2006,M6,Faits divers,169,12670,135
+2006,M6,Histoire-hommages,37,2866,32
+2006,M6,International,294,20590,200
+2006,M6,Justice,251,18719,182
+2006,M6,Politique France,163,12716,127
+2006,M6,Santé,154,12208,118
+2006,M6,Sciences et techniques,95,6505,86
+2006,M6,Société,648,49688,308
+2006,M6,Sport,462,30031,268
+2006,TF1,Catastrophes,295,22391,185
+2006,TF1,Culture-loisirs,549,49023,292
+2006,TF1,Economie,588,49510,286
+2006,TF1,Education,271,25264,181
+2006,TF1,Environnement,465,38316,228
+2006,TF1,Faits divers,259,22981,167
+2006,TF1,Histoire-hommages,99,9468,78
+2006,TF1,International,852,69152,319
+2006,TF1,Justice,499,44195,246
+2006,TF1,Politique France,440,41775,238
+2006,TF1,Santé,477,40622,243
+2006,TF1,Sciences et techniques,278,22452,187
+2006,TF1,Société,1806,153654,356
+2006,TF1,Sport,887,69068,315
+2007,Arte,Catastrophes,119,6251,99
+2007,Arte,Culture-loisirs,51,3744,42
+2007,Arte,Economie,208,17299,151
+2007,Arte,Education,28,3102,27
+2007,Arte,Environnement,140,12280,117
+2007,Arte,Faits divers,37,2776,32
+2007,Arte,Histoire-hommages,70,5081,56
+2007,Arte,International,1761,128667,363
+2007,Arte,Justice,208,14020,155
+2007,Arte,Politique France,204,18862,153
+2007,Arte,Santé,56,4344,52
+2007,Arte,Sciences et techniques,45,2707,41
+2007,Arte,Société,553,45998,294
+2007,Arte,Sport,46,3788,37
+2007,France 2,Catastrophes,354,24332,186
+2007,France 2,Culture-loisirs,690,73407,329
+2007,France 2,Economie,525,49983,269
+2007,France 2,Education,210,19599,140
+2007,France 2,Environnement,472,38731,237
+2007,France 2,Faits divers,301,21915,195
+2007,France 2,Histoire-hommages,126,11550,90
+2007,France 2,International,955,70976,334
+2007,France 2,Justice,452,35838,237
+2007,France 2,Politique France,869,82772,293
+2007,France 2,Santé,267,24242,180
+2007,France 2,Sciences et techniques,177,15079,131
+2007,France 2,Société,1610,137080,357
+2007,France 2,Sport,804,50765,321
+2007,France 3,Catastrophes,205,17385,152
+2007,France 3,Culture-loisirs,422,47506,279
+2007,France 3,Economie,355,35977,215
+2007,France 3,Education,92,9068,77
+2007,France 3,Environnement,206,18504,145
+2007,France 3,Faits divers,244,18751,167
+2007,France 3,Histoire-hommages,105,9885,75
+2007,France 3,International,701,61411,307
+2007,France 3,Justice,389,36638,225
+2007,France 3,Politique France,698,75124,289
+2007,France 3,Santé,152,15498,118
+2007,France 3,Sciences et techniques,75,7124,63
+2007,France 3,Société,958,90379,342
+2007,France 3,Sport,458,34626,250
+2007,M6,Catastrophes,157,10255,122
+2007,M6,Culture-loisirs,254,21779,205
+2007,M6,Economie,155,11841,128
+2007,M6,Education,62,4987,53
+2007,M6,Environnement,132,8639,110
+2007,M6,Faits divers,213,14652,163
+2007,M6,Histoire-hommages,59,4401,48
+2007,M6,International,334,20897,224
+2007,M6,Justice,251,18094,175
+2007,M6,Politique France,406,31049,218
+2007,M6,Santé,104,8138,93
+2007,M6,Sciences et techniques,74,4669,69
+2007,M6,Société,611,43704,292
+2007,M6,Sport,365,20628,243
+2007,TF1,Catastrophes,431,27483,220
+2007,TF1,Culture-loisirs,633,53511,304
+2007,TF1,Economie,659,51038,286
+2007,TF1,Education,262,20695,174
+2007,TF1,Environnement,587,43080,280
+2007,TF1,Faits divers,352,23499,212
+2007,TF1,Histoire-hommages,164,12602,109
+2007,TF1,International,1055,67838,347
+2007,TF1,Justice,537,36839,258
+2007,TF1,Politique France,860,74260,303
+2007,TF1,Santé,346,28428,211
+2007,TF1,Sciences et techniques,261,18771,176
+2007,TF1,Société,1859,146140,358
+2007,TF1,Sport,907,53481,328
+2008,Arte,Catastrophes,116,6694,80
+2008,Arte,Culture-loisirs,55,4191,44
+2008,Arte,Economie,452,36945,240
+2008,Arte,Education,39,3433,38
+2008,Arte,Environnement,70,4815,61
+2008,Arte,Faits divers,52,3103,49
+2008,Arte,Histoire-hommages,71,5085,58
+2008,Arte,International,1876,132934,366
+2008,Arte,Justice,185,11227,136
+2008,Arte,Politique France,129,12538,99
+2008,Arte,Santé,44,3728,40
+2008,Arte,Sciences et techniques,54,3744,51
+2008,Arte,Société,496,38244,271
+2008,Arte,Sport,77,6296,60
+2008,France 2,Catastrophes,397,26384,209
+2008,France 2,Culture-loisirs,754,80610,343
+2008,France 2,Economie,975,83396,320
+2008,France 2,Education,176,16632,111
+2008,France 2,Environnement,311,25174,198
+2008,France 2,Faits divers,388,29450,214
+2008,France 2,Histoire-hommages,168,13820,105
+2008,France 2,International,1216,94805,342
+2008,France 2,Justice,437,34624,223
+2008,France 2,Politique France,549,46784,235
+2008,France 2,Santé,307,29282,196
+2008,France 2,Sciences et techniques,142,11716,117
+2008,France 2,Société,1308,113746,355
+2008,France 2,Sport,929,62053,335
+2008,France 3,Catastrophes,211,15406,141
+2008,France 3,Culture-loisirs,475,53794,295
+2008,France 3,Economie,588,61848,269
+2008,France 3,Education,109,12218,88
+2008,France 3,Environnement,168,13817,120
+2008,France 3,Faits divers,286,22284,192
+2008,France 3,Histoire-hommages,102,10279,68
+2008,France 3,International,750,72328,296
+2008,France 3,Justice,343,33072,226
+2008,France 3,Politique France,428,45016,234
+2008,France 3,Santé,161,17032,119
+2008,France 3,Sciences et techniques,87,7835,74
+2008,France 3,Société,843,81162,338
+2008,France 3,Sport,490,38286,261
+2008,M6,Catastrophes,166,9674,130
+2008,M6,Culture-loisirs,310,26060,253
+2008,M6,Economie,316,22530,198
+2008,M6,Education,95,7107,82
+2008,M6,Environnement,84,5680,72
+2008,M6,Faits divers,302,19661,208
+2008,M6,Histoire-hommages,66,4843,53
+2008,M6,International,343,23028,213
+2008,M6,Justice,252,17854,177
+2008,M6,Politique France,209,15685,153
+2008,M6,Santé,150,11732,122
+2008,M6,Sciences et techniques,80,5059,70
+2008,M6,Société,641,43512,300
+2008,M6,Sport,456,26346,282
+2008,TF1,Catastrophes,415,27564,210
+2008,TF1,Culture-loisirs,690,60009,322
+2008,TF1,Economie,1009,80580,334
+2008,TF1,Education,232,21231,163
+2008,TF1,Environnement,388,31199,238
+2008,TF1,Faits divers,414,30712,234
+2008,TF1,Histoire-hommages,180,14029,118
+2008,TF1,International,1067,77249,334
+2008,TF1,Justice,425,33170,224
+2008,TF1,Politique France,478,40722,237
+2008,TF1,Santé,328,29619,216
+2008,TF1,Sciences et techniques,232,19127,152
+2008,TF1,Société,1617,128283,361
+2008,TF1,Sport,944,63067,329
+2009,Arte,Catastrophes,87,4667,80
+2009,Arte,Culture-loisirs,46,3847,43
+2009,Arte,Economie,433,32555,254
+2009,Arte,Education,38,3657,34
+2009,Arte,Environnement,104,9667,80
+2009,Arte,Faits divers,51,2677,46
+2009,Arte,Histoire-hommages,134,10548,98
+2009,Arte,International,1786,130879,363
+2009,Arte,Justice,198,12475,151
+2009,Arte,Politique France,93,6983,81
+2009,Arte,Santé,93,7149,80
+2009,Arte,Sciences et techniques,55,4022,48
+2009,Arte,Société,457,37241,266
+2009,Arte,Sport,12,925,12
+2009,France 2,Catastrophes,536,36220,217
+2009,France 2,Culture-loisirs,639,64467,320
+2009,France 2,Economie,711,58566,283
+2009,France 2,Education,159,14829,106
+2009,France 2,Environnement,278,23908,166
+2009,France 2,Faits divers,404,27459,228
+2009,France 2,Histoire-hommages,234,20486,123
+2009,France 2,International,961,68931,316
+2009,France 2,Justice,420,36501,233
+2009,France 2,Politique France,409,32428,220
+2009,France 2,Santé,519,44862,240
+2009,France 2,Sciences et techniques,124,10488,96
+2009,France 2,Société,1286,109368,347
+2009,France 2,Sport,625,36438,313
+2009,France 3,Catastrophes,341,28630,180
+2009,France 3,Culture-loisirs,453,52228,296
+2009,France 3,Economie,486,47624,250
+2009,France 3,Education,112,11080,91
+2009,France 3,Environnement,183,18069,121
+2009,France 3,Faits divers,297,22195,188
+2009,France 3,Histoire-hommages,129,12188,82
+2009,France 3,International,717,67602,290
+2009,France 3,Justice,384,36237,231
+2009,France 3,Politique France,297,29219,194
+2009,France 3,Santé,320,32296,192
+2009,France 3,Sciences et techniques,87,9559,73
+2009,France 3,Société,888,83526,324
+2009,France 3,Sport,305,21617,200
+2009,M6,Catastrophes,254,16238,174
+2009,M6,Culture-loisirs,326,26379,246
+2009,M6,Economie,330,22549,206
+2009,M6,Education,101,7793,86
+2009,M6,Environnement,123,8170,99
+2009,M6,Faits divers,343,19084,217
+2009,M6,Histoire-hommages,93,6918,72
+2009,M6,International,384,20169,223
+2009,M6,Justice,354,22366,203
+2009,M6,Politique France,201,13547,141
+2009,M6,Santé,269,19447,175
+2009,M6,Sciences et techniques,71,5097,63
+2009,M6,Société,844,54037,321
+2009,M6,Sport,482,22709,261
+2009,TF1,Catastrophes,595,45020,242
+2009,TF1,Culture-loisirs,695,66925,317
+2009,TF1,Economie,780,67362,317
+2009,TF1,Education,194,16906,133
+2009,TF1,Environnement,358,33440,207
+2009,TF1,Faits divers,390,30710,229
+2009,TF1,Histoire-hommages,230,22834,114
+2009,TF1,International,692,49419,293
+2009,TF1,Justice,435,36064,237
+2009,TF1,Politique France,343,27021,211
+2009,TF1,Santé,532,48029,257
+2009,TF1,Sciences et techniques,182,16606,135
+2009,TF1,Société,1408,119924,350
+2009,TF1,Sport,681,45346,306
+2010,Arte,Catastrophes,203,16205,134
+2010,Arte,Culture-loisirs,973,127733,339
+2010,Arte,Economie,312,33873,187
+2010,Arte,Education,27,3446,22
+2010,Arte,Environnement,128,12581,109
+2010,Arte,Faits divers,40,3486,36
+2010,Arte,Histoire-hommages,84,8803,65
+2010,Arte,International,1279,111007,360
+2010,Arte,Justice,132,13583,102
+2010,Arte,Politique France,113,12015,90
+2010,Arte,Santé,47,4724,40
+2010,Arte,Sciences et techniques,52,4829,41
+2010,Arte,Société,528,52249,269
+2010,Arte,Sport,29,3351,23
+2010,France 2,Catastrophes,759,55148,263
+2010,France 2,Culture-loisirs,525,53218,300
+2010,France 2,Economie,509,45973,244
+2010,France 2,Education,145,15481,112
+2010,France 2,Environnement,325,22927,191
+2010,France 2,Faits divers,284,20457,183
+2010,France 2,Histoire-hommages,137,11310,92
+2010,France 2,International,853,55702,304
+2010,France 2,Justice,365,32439,215
+2010,France 2,Politique France,561,45693,239
+2010,France 2,Santé,237,25188,168
+2010,France 2,Sciences et techniques,85,7652,69
+2010,France 2,Société,1499,134688,346
+2010,France 2,Sport,731,49843,295
+2010,France 3,Catastrophes,572,46281,229
+2010,France 3,Culture-loisirs,384,44992,263
+2010,France 3,Economie,334,32085,206
+2010,France 3,Education,111,12333,87
+2010,France 3,Environnement,244,20618,154
+2010,France 3,Faits divers,270,20119,184
+2010,France 3,Histoire-hommages,102,8709,71
+2010,France 3,International,696,52238,296
+2010,France 3,Justice,327,28839,203
+2010,France 3,Politique France,404,38858,227
+2010,France 3,Santé,197,20829,149
+2010,France 3,Sciences et techniques,53,5802,50
+2010,France 3,Société,1101,99131,336
+2010,France 3,Sport,402,32956,216
+2010,M6,Catastrophes,546,30352,244
+2010,M6,Culture-loisirs,385,29497,256
+2010,M6,Economie,333,24219,191
+2010,M6,Education,122,9277,91
+2010,M6,Environnement,220,13496,143
+2010,M6,Faits divers,381,19417,234
+2010,M6,Histoire-hommages,84,4971,59
+2010,M6,International,412,20533,235
+2010,M6,Justice,361,18672,220
+2010,M6,Politique France,308,19532,181
+2010,M6,Santé,180,13652,138
+2010,M6,Sciences et techniques,80,5837,69
+2010,M6,Société,1078,68724,336
+2010,M6,Sport,634,32658,271
+2010,TF1,Catastrophes,896,68164,276
+2010,TF1,Culture-loisirs,653,62926,312
+2010,TF1,Economie,506,43055,254
+2010,TF1,Education,178,16685,135
+2010,TF1,Environnement,467,38895,237
+2010,TF1,Faits divers,354,25710,214
+2010,TF1,Histoire-hommages,136,11619,102
+2010,TF1,International,543,36174,264
+2010,TF1,Justice,329,27553,209
+2010,TF1,Politique France,473,42338,237
+2010,TF1,Santé,241,23431,171
+2010,TF1,Sciences et techniques,126,11634,105
+2010,TF1,Société,1530,132558,344
+2010,TF1,Sport,736,55051,309
+2011,Arte,Catastrophes,75,6509,59
+2011,Arte,Culture-loisirs,763,97715,312
+2011,Arte,Economie,282,30535,185
+2011,Arte,Education,13,1612,11
+2011,Arte,Environnement,142,15112,94
+2011,Arte,Faits divers,28,2361,26
+2011,Arte,Histoire-hommages,86,7858,74
+2011,Arte,International,1856,169797,364
+2011,Arte,Justice,125,11175,99
+2011,Arte,Politique France,63,6246,60
+2011,Arte,Santé,39,3934,34
+2011,Arte,Sciences et techniques,43,4145,37
+2011,Arte,Société,340,35201,218
+2011,Arte,Sport,18,1820,17
+2011,France 2,Catastrophes,418,29263,201
+2011,France 2,Culture-loisirs,501,49812,272
+2011,France 2,Economie,771,72952,271
+2011,France 2,Education,179,20970,119
+2011,France 2,Environnement,390,31509,182
+2011,France 2,Faits divers,453,32787,239
+2011,France 2,Histoire-hommages,143,11918,92
+2011,France 2,International,1702,121786,347
+2011,France 2,Justice,591,51078,224
+2011,France 2,Politique France,782,69900,282
+2011,France 2,Santé,264,26418,161
+2011,France 2,Sciences et techniques,106,9785,86
+2011,France 2,Société,1042,99764,325
+2011,France 2,Sport,576,38939,302
+2011,France 3,Catastrophes,333,23032,177
+2011,France 3,Culture-loisirs,327,35030,239
+2011,France 3,Economie,514,48222,268
+2011,France 3,Education,112,11585,96
+2011,France 3,Environnement,246,22240,153
+2011,France 3,Faits divers,420,29729,249
+2011,France 3,Histoire-hommages,90,7787,63
+2011,France 3,International,1101,80544,327
+2011,France 3,Justice,457,38646,233
+2011,France 3,Politique France,541,45008,261
+2011,France 3,Santé,246,25200,173
+2011,France 3,Sciences et techniques,95,8691,73
+2011,France 3,Société,772,70229,308
+2011,France 3,Sport,309,22576,200
+2011,M6,Catastrophes,311,18444,174
+2011,M6,Culture-loisirs,578,44789,321
+2011,M6,Economie,411,32910,224
+2011,M6,Education,111,9645,83
+2011,M6,Environnement,245,16464,135
+2011,M6,Faits divers,539,35662,281
+2011,M6,Histoire-hommages,66,4550,42
+2011,M6,International,752,41054,300
+2011,M6,Justice,482,31706,232
+2011,M6,Politique France,357,22594,190
+2011,M6,Santé,261,20739,164
+2011,M6,Sciences et techniques,93,7043,78
+2011,M6,Société,1022,74118,326
+2011,M6,Sport,330,17358,217
+2011,TF1,Catastrophes,476,35475,223
+2011,TF1,Culture-loisirs,701,67932,325
+2011,TF1,Economie,808,71914,302
+2011,TF1,Education,183,17219,129
+2011,TF1,Environnement,463,38930,223
+2011,TF1,Faits divers,479,34362,250
+2011,TF1,Histoire-hommages,148,11073,110
+2011,TF1,International,1263,98583,342
+2011,TF1,Justice,582,46911,238
+2011,TF1,Politique France,558,49213,256
+2011,TF1,Santé,312,29454,204
+2011,TF1,Sciences et techniques,141,11962,108
+2011,TF1,Société,1221,103932,339
+2011,TF1,Sport,629,45904,308
+2012,Arte,Catastrophes,44,2767,39
+2012,Arte,Culture-loisirs,356,47016,285
+2012,Arte,Economie,351,36520,216
+2012,Arte,Education,14,2098,14
+2012,Arte,Environnement,96,9191,76
+2012,Arte,Faits divers,40,2780,37
+2012,Arte,Histoire-hommages,84,6899,72
+2012,Arte,International,1535,134279,363
+2012,Arte,Justice,157,13266,120
+2012,Arte,Politique France,187,17265,119
+2012,Arte,Santé,26,2701,26
+2012,Arte,Sciences et techniques,29,2213,27
+2012,Arte,Société,444,42363,256
+2012,Arte,Sport,22,2267,18
+2012,France 2,Catastrophes,529,34758,205
+2012,France 2,Culture-loisirs,428,46900,250
+2012,France 2,Economie,1028,99046,313
+2012,France 2,Education,200,26929,137
+2012,France 2,Environnement,338,27960,173
+2012,France 2,Faits divers,461,36497,222
+2012,France 2,Histoire-hommages,159,13368,100
+2012,France 2,International,1048,72228,339
+2012,France 2,Justice,349,29510,191
+2012,France 2,Politique France,1208,107966,307
+2012,France 2,Santé,271,31788,175
+2012,France 2,Sciences et techniques,124,12421,91
+2012,France 2,Société,1365,150149,341
+2012,France 2,Sport,733,50511,268
+2012,France 3,Catastrophes,348,23288,192
+2012,France 3,Culture-loisirs,312,32738,220
+2012,France 3,Economie,625,56974,292
+2012,France 3,Education,117,12650,88
+2012,France 3,Environnement,206,16737,137
+2012,France 3,Faits divers,405,28293,219
+2012,France 3,Histoire-hommages,98,8391,81
+2012,France 3,International,532,36880,280
+2012,France 3,Justice,318,25491,204
+2012,France 3,Politique France,885,76247,283
+2012,France 3,Santé,193,20585,149
+2012,France 3,Sciences et techniques,82,7384,74
+2012,France 3,Société,843,76846,326
+2012,France 3,Sport,399,27060,199
+2012,M6,Catastrophes,360,21292,189
+2012,M6,Culture-loisirs,612,51750,337
+2012,M6,Economie,433,35307,234
+2012,M6,Education,99,9005,78
+2012,M6,Environnement,155,10784,110
+2012,M6,Faits divers,522,35458,271
+2012,M6,Histoire-hommages,103,7703,71
+2012,M6,International,431,23068,243
+2012,M6,Justice,312,22445,203
+2012,M6,Politique France,775,53550,259
+2012,M6,Santé,208,18656,149
+2012,M6,Sciences et techniques,90,7214,77
+2012,M6,Société,1035,74692,325
+2012,M6,Sport,398,23508,220
+2012,TF1,Catastrophes,511,38071,202
+2012,TF1,Culture-loisirs,678,67612,318
+2012,TF1,Economie,848,77505,313
+2012,TF1,Education,168,16525,124
+2012,TF1,Environnement,361,30914,192
+2012,TF1,Faits divers,475,36477,237
+2012,TF1,Histoire-hommages,161,13331,115
+2012,TF1,International,723,52949,306
+2012,TF1,Justice,344,27807,208
+2012,TF1,Politique France,1008,92674,300
+2012,TF1,Santé,256,24708,174
+2012,TF1,Sciences et techniques,153,15053,117
+2012,TF1,Société,1245,112415,343
+2012,TF1,Sport,769,60744,310
+2013,Arte,Catastrophes,59,4139,49
+2013,Arte,Culture-loisirs,338,48439,284
+2013,Arte,Economie,258,29297,179
+2013,Arte,Education,15,1788,14
+2013,Arte,Environnement,85,8785,71
+2013,Arte,Faits divers,33,2540,30
+2013,Arte,Histoire-hommages,108,10107,78
+2013,Arte,International,1447,133341,360
+2013,Arte,Justice,209,19258,154
+2013,Arte,Politique France,95,9443,82
+2013,Arte,Santé,42,4613,39
+2013,Arte,Sciences et techniques,28,2582,26
+2013,Arte,Société,441,46865,254
+2013,Arte,Sport,9,891,9
+2013,France 2,Catastrophes,711,47922,248
+2013,France 2,Culture-loisirs,515,68072,286
+2013,France 2,Economie,1031,111565,327
+2013,France 2,Education,178,24434,128
+2013,France 2,Environnement,406,33445,217
+2013,France 2,Faits divers,503,37358,238
+2013,France 2,Histoire-hommages,212,19234,121
+2013,France 2,International,1177,85363,325
+2013,France 2,Justice,365,32559,190
+2013,France 2,Politique France,661,57055,254
+2013,France 2,Santé,264,31345,176
+2013,France 2,Sciences et techniques,158,16495,115
+2013,France 2,Société,1676,181949,359
+2013,France 2,Sport,475,29665,251
+2013,France 3,Catastrophes,436,32110,198
+2013,France 3,Culture-loisirs,288,31231,200
+2013,France 3,Economie,607,60087,292
+2013,France 3,Education,123,13779,95
+2013,France 3,Environnement,241,19178,154
+2013,France 3,Faits divers,376,27626,216
+2013,France 3,Histoire-hommages,136,11731,86
+2013,France 3,International,606,44411,253
+2013,France 3,Justice,326,27510,203
+2013,France 3,Politique France,430,36141,213
+2013,France 3,Santé,226,22461,149
+2013,France 3,Sciences et techniques,78,7147,72
+2013,France 3,Société,985,89301,325
+2013,France 3,Sport,323,22412,192
+2013,M6,Catastrophes,414,25717,211
+2013,M6,Culture-loisirs,593,53573,329
+2013,M6,Economie,476,39903,250
+2013,M6,Education,131,10589,92
+2013,M6,Environnement,159,10761,122
+2013,M6,Faits divers,533,37261,271
+2013,M6,Histoire-hommages,108,8046,72
+2013,M6,International,628,42178,275
+2013,M6,Justice,359,26432,219
+2013,M6,Politique France,399,27211,193
+2013,M6,Santé,211,17932,154
+2013,M6,Sciences et techniques,99,8346,82
+2013,M6,Société,1198,95609,344
+2013,M6,Sport,300,19105,187
+2013,TF1,Catastrophes,542,43857,207
+2013,TF1,Culture-loisirs,716,76639,341
+2013,TF1,Economie,791,79121,311
+2013,TF1,Education,180,19843,138
+2013,TF1,Environnement,304,26874,186
+2013,TF1,Faits divers,413,32802,231
+2013,TF1,Histoire-hommages,176,15467,110
+2013,TF1,International,854,74802,302
+2013,TF1,Justice,280,25456,181
+2013,TF1,Politique France,508,49812,237
+2013,TF1,Santé,232,23287,175
+2013,TF1,Sciences et techniques,136,13720,114
+2013,TF1,Société,1348,130014,347
+2013,TF1,Sport,557,46751,278
+2014,Arte,Catastrophes,95,6549,73
+2014,Arte,Culture-loisirs,332,48073,276
+2014,Arte,Economie,156,18057,124
+2014,Arte,Education,21,3133,21
+2014,Arte,Environnement,71,7396,60
+2014,Arte,Faits divers,22,1774,20
+2014,Arte,Histoire-hommages,105,10443,76
+2014,Arte,International,1559,150683,363
+2014,Arte,Justice,141,13176,112
+2014,Arte,Politique France,121,12930,95
+2014,Arte,Santé,82,8153,74
+2014,Arte,Sciences et techniques,25,2456,23
+2014,Arte,Société,337,35970,221
+2014,Arte,Sport,18,1975,14
+2014,France 2,Catastrophes,709,53759,243
+2014,France 2,Culture-loisirs,468,63070,249
+2014,France 2,Economie,862,106269,308
+2014,France 2,Education,119,17708,91
+2014,France 2,Environnement,439,39205,212
+2014,France 2,Faits divers,303,24519,191
+2014,France 2,Histoire-hommages,244,23874,136
+2014,France 2,International,1277,93669,336
+2014,France 2,Justice,389,36716,183
+2014,France 2,Politique France,703,70479,251
+2014,France 2,Santé,274,28080,161
+2014,France 2,Sciences et techniques,150,16567,113
+2014,France 2,Société,1357,149108,335
+2014,France 2,Sport,684,46718,273
+2014,France 3,Catastrophes,472,35387,210
+2014,France 3,Culture-loisirs,290,31238,203
+2014,France 3,Economie,549,54360,273
+2014,France 3,Education,94,10955,73
+2014,France 3,Environnement,284,22903,167
+2014,France 3,Faits divers,286,19277,198
+2014,France 3,Histoire-hommages,185,16394,109
+2014,France 3,International,595,44184,273
+2014,France 3,Justice,344,30487,202
+2014,France 3,Politique France,514,44165,239
+2014,France 3,Santé,242,24746,163
+2014,France 3,Sciences et techniques,81,7971,69
+2014,France 3,Société,937,84905,328
+2014,France 3,Sport,388,24742,209
+2014,M6,Catastrophes,504,33439,230
+2014,M6,Culture-loisirs,551,53229,325
+2014,M6,Economie,402,38997,236
+2014,M6,Education,120,11156,88
+2014,M6,Environnement,185,13736,122
+2014,M6,Faits divers,465,33044,260
+2014,M6,Histoire-hommages,104,7199,63
+2014,M6,International,671,43870,292
+2014,M6,Justice,421,31472,229
+2014,M6,Politique France,379,29244,191
+2014,M6,Santé,230,19975,160
+2014,M6,Sciences et techniques,99,10444,83
+2014,M6,Société,1095,90702,337
+2014,M6,Sport,405,24590,200
+2014,TF1,Catastrophes,597,48138,205
+2014,TF1,Culture-loisirs,615,67927,318
+2014,TF1,Economie,680,66985,296
+2014,TF1,Education,164,18057,129
+2014,TF1,Environnement,383,34780,196
+2014,TF1,Faits divers,244,18256,169
+2014,TF1,Histoire-hommages,201,16633,124
+2014,TF1,International,880,75558,310
+2014,TF1,Justice,316,29325,190
+2014,TF1,Politique France,557,53434,241
+2014,TF1,Santé,219,21643,163
+2014,TF1,Sciences et techniques,126,13492,103
+2014,TF1,Société,1100,103266,340
+2014,TF1,Sport,758,66488,295
+2015,Arte,Catastrophes,83,6135,67
+2015,Arte,Culture-loisirs,287,38036,238
+2015,Arte,Economie,195,21701,117
+2015,Arte,Education,17,2087,14
+2015,Arte,Environnement,115,12641,79
+2015,Arte,Faits divers,39,3050,37
+2015,Arte,Histoire-hommages,95,8996,70
+2015,Arte,International,1367,129497,325
+2015,Arte,Justice,98,9006,86
+2015,Arte,Politique France,245,25878,135
+2015,Arte,Santé,22,2022,21
+2015,Arte,Sciences et techniques,32,2997,31
+2015,Arte,Société,284,30897,201
+2015,Arte,Sport,22,2114,20
+2015,France 2,Catastrophes,580,47069,186
+2015,France 2,Culture-loisirs,366,54265,201
+2015,France 2,Economie,919,120093,276
+2015,France 2,Education,110,15074,76
+2015,France 2,Environnement,392,43527,187
+2015,France 2,Faits divers,261,21913,136
+2015,France 2,Histoire-hommages,137,13887,89
+2015,France 2,International,1089,90253,289
+2015,France 2,Justice,185,18646,118
+2015,France 2,Politique France,1094,123843,253
+2015,France 2,Santé,143,21592,104
+2015,France 2,Sciences et techniques,114,13526,89
+2015,France 2,Société,993,123337,294
+2015,France 2,Sport,328,19304,188
+2015,France 3,Catastrophes,430,31793,186
+2015,France 3,Culture-loisirs,272,30364,185
+2015,France 3,Economie,512,51170,229
+2015,France 3,Education,87,10797,70
+2015,France 3,Environnement,306,28482,159
+2015,France 3,Faits divers,246,17246,146
+2015,France 3,Histoire-hommages,109,8648,71
+2015,France 3,International,515,38147,231
+2015,France 3,Justice,167,13893,125
+2015,France 3,Politique France,732,64119,231
+2015,France 3,Santé,151,15340,115
+2015,France 3,Sciences et techniques,77,6936,70
+2015,France 3,Société,644,58981,259
+2015,France 3,Sport,266,17133,160
+2015,M6,Catastrophes,453,31597,201
+2015,M6,Culture-loisirs,540,51611,300
+2015,M6,Economie,389,34381,204
+2015,M6,Education,102,9378,69
+2015,M6,Environnement,220,17614,129
+2015,M6,Faits divers,297,20891,180
+2015,M6,Histoire-hommages,76,5091,53
+2015,M6,International,576,40893,249
+2015,M6,Justice,270,19766,165
+2015,M6,Politique France,820,72233,223
+2015,M6,Santé,192,18128,136
+2015,M6,Sciences et techniques,110,10868,87
+2015,M6,Société,858,70656,292
+2015,M6,Sport,269,15743,168
+2015,TF1,Catastrophes,482,40808,174
+2015,TF1,Culture-loisirs,546,59968,280
+2015,TF1,Economie,677,71267,265
+2015,TF1,Education,144,16504,107
+2015,TF1,Environnement,403,40955,191
+2015,TF1,Faits divers,241,20157,143
+2015,TF1,Histoire-hommages,115,11139,85
+2015,TF1,International,678,63075,266
+2015,TF1,Justice,176,16349,124
+2015,TF1,Politique France,943,105295,257
+2015,TF1,Santé,188,20188,143
+2015,TF1,Sciences et techniques,143,15785,114
+2015,TF1,Société,893,91751,299
+2015,TF1,Sport,469,43581,242
+2016,Arte,Catastrophes,61,4278,55
+2016,Arte,Culture-loisirs,332,44379,272
+2016,Arte,Economie,125,13240,103
+2016,Arte,Education,15,2199,14
+2016,Arte,Environnement,82,8478,70
+2016,Arte,Faits divers,57,4821,49
+2016,Arte,Histoire-hommages,115,10959,87
+2016,Arte,International,1604,153611,362
+2016,Arte,Justice,106,10237,89
+2016,Arte,Politique France,200,21293,146
+2016,Arte,Santé,35,4309,34
+2016,Arte,Sciences et techniques,51,4213,48
+2016,Arte,Société,318,36633,215
+2016,Arte,Sport,39,3867,34
+2016,France 2,Catastrophes,468,34451,171
+2016,France 2,Culture-loisirs,371,59017,225
+2016,France 2,Economie,718,98627,288
+2016,France 2,Education,78,12401,62
+2016,France 2,Environnement,242,29093,164
+2016,France 2,Faits divers,200,15455,131
+2016,France 2,Histoire-hommages,186,18550,111
+2016,France 2,International,1377,115294,333
+2016,France 2,Justice,209,18078,125
+2016,France 2,Politique France,1148,117885,317
+2016,France 2,Santé,116,14968,81
+2016,France 2,Sciences et techniques,136,19098,108
+2016,France 2,Société,1104,135121,329
+2016,France 2,Sport,521,45446,208
+2016,France 3,Catastrophes,430,29554,188
+2016,France 3,Culture-loisirs,263,31619,194
+2016,France 3,Economie,475,51349,250
+2016,France 3,Education,64,7772,57
+2016,France 3,Environnement,200,17203,132
+2016,France 3,Faits divers,212,14550,153
+2016,France 3,Histoire-hommages,149,14718,98
+2016,France 3,International,635,46070,263
+2016,France 3,Justice,209,16947,136
+2016,France 3,Politique France,847,71874,291
+2016,France 3,Santé,126,14414,105
+2016,France 3,Sciences et techniques,85,8804,71
+2016,France 3,Société,844,77213,315
+2016,France 3,Sport,427,30005,195
+2016,M6,Catastrophes,400,27707,213
+2016,M6,Culture-loisirs,559,57880,328
+2016,M6,Economie,377,35992,238
+2016,M6,Education,125,12447,99
+2016,M6,Environnement,141,10739,110
+2016,M6,Faits divers,327,22418,218
+2016,M6,Histoire-hommages,131,10107,87
+2016,M6,International,815,52354,305
+2016,M6,Justice,253,18199,161
+2016,M6,Politique France,797,64731,292
+2016,M6,Santé,186,18068,137
+2016,M6,Sciences et techniques,112,10675,91
+2016,M6,Société,1020,87562,338
+2016,M6,Sport,666,47031,228
+2016,TF1,Catastrophes,407,33155,178
+2016,TF1,Culture-loisirs,560,69084,299
+2016,TF1,Economie,635,72098,274
+2016,TF1,Education,147,17951,114
+2016,TF1,Environnement,256,28776,170
+2016,TF1,Faits divers,172,13346,128
+2016,TF1,Histoire-hommages,174,16984,109
+2016,TF1,International,902,86061,309
+2016,TF1,Justice,184,16214,135
+2016,TF1,Politique France,999,110992,308
+2016,TF1,Santé,193,21972,150
+2016,TF1,Sciences et techniques,196,24080,151
+2016,TF1,Société,1043,112941,336
+2016,TF1,Sport,692,60485,273
+2017,Arte,Catastrophes,78,6197,66
+2017,Arte,Culture-loisirs,299,36959,256
+2017,Arte,Economie,125,15584,104
+2017,Arte,Education,15,2428,14
+2017,Arte,Environnement,112,12607,82
+2017,Arte,Faits divers,38,3565,36
+2017,Arte,Histoire-hommages,92,8245,75
+2017,Arte,International,1620,163815,361
+2017,Arte,Justice,135,14080,115
+2017,Arte,Politique France,266,29446,156
+2017,Arte,Santé,55,6245,51
+2017,Arte,Sciences et techniques,107,9392,74
+2017,Arte,Société,300,36752,208
+2017,Arte,Sport,13,1493,13
+2017,France 2,Catastrophes,439,34374,180
+2017,France 2,Culture-loisirs,276,49908,169
+2017,France 2,Economie,741,102678,292
+2017,France 2,Education,102,16491,82
+2017,France 2,Environnement,241,27923,146
+2017,France 2,Faits divers,191,15610,118
+2017,France 2,Histoire-hommages,171,17613,87
+2017,France 2,International,1058,87495,321
+2017,France 2,Justice,200,19148,126
+2017,France 2,Politique France,1510,156512,331
+2017,France 2,Santé,141,18830,100
+2017,France 2,Sciences et techniques,102,12001,71
+2017,France 2,Société,886,110764,307
+2017,France 2,Sport,296,24045,181
+2017,France 3,Catastrophes,452,32715,195
+2017,France 3,Culture-loisirs,260,30878,192
+2017,France 3,Economie,484,50999,252
+2017,France 3,Education,74,9372,65
+2017,France 3,Environnement,199,19414,140
+2017,France 3,Faits divers,251,18601,158
+2017,France 3,Histoire-hommages,148,13283,83
+2017,France 3,International,559,40555,247
+2017,France 3,Justice,203,17213,138
+2017,France 3,Politique France,1001,88060,313
+2017,France 3,Santé,170,18137,126
+2017,France 3,Sciences et techniques,78,8716,62
+2017,France 3,Société,660,68758,288
+2017,France 3,Sport,246,16593,157
+2017,M6,Catastrophes,420,27525,211
+2017,M6,Culture-loisirs,583,58435,336
+2017,M6,Economie,392,36436,235
+2017,M6,Education,103,9589,80
+2017,M6,Environnement,156,11685,104
+2017,M6,Faits divers,285,20609,195
+2017,M6,Histoire-hommages,128,11715,73
+2017,M6,International,673,42232,296
+2017,M6,Justice,243,17120,171
+2017,M6,Politique France,1037,85405,309
+2017,M6,Santé,210,19472,159
+2017,M6,Sciences et techniques,119,11079,100
+2017,M6,Société,927,80714,334
+2017,M6,Sport,295,19260,182
+2017,TF1,Catastrophes,434,36765,179
+2017,TF1,Culture-loisirs,442,53450,251
+2017,TF1,Economie,676,83782,294
+2017,TF1,Education,179,22927,139
+2017,TF1,Environnement,276,31300,177
+2017,TF1,Faits divers,182,17685,128
+2017,TF1,Histoire-hommages,165,19312,86
+2017,TF1,International,655,58264,264
+2017,TF1,Justice,171,16488,120
+2017,TF1,Politique France,1277,143536,307
+2017,TF1,Santé,192,21033,142
+2017,TF1,Sciences et techniques,187,25638,144
+2017,TF1,Société,882,100057,320
+2017,TF1,Sport,382,38140,225
+2018,Arte,Catastrophes,72,6126,56
+2018,Arte,Culture-loisirs,295,35672,259
+2018,Arte,Economie,132,16606,102
+2018,Arte,Education,30,4163,28
+2018,Arte,Environnement,144,16513,104
+2018,Arte,Faits divers,53,5122,50
+2018,Arte,Histoire-hommages,90,8912,79
+2018,Arte,International,1502,161471,364
+2018,Arte,Justice,116,12615,98
+2018,Arte,Politique France,128,12613,102
+2018,Arte,Santé,73,8587,65
+2018,Arte,Sciences et techniques,125,11104,81
+2018,Arte,Société,390,45769,241
+2018,Arte,Sport,19,2077,17
+2018,France 2,Catastrophes,534,42471,217
+2018,France 2,Culture-loisirs,289,46019,190
+2018,France 2,Economie,849,104668,306
+2018,France 2,Education,122,15785,99
+2018,France 2,Environnement,340,44656,201
+2018,France 2,Faits divers,253,21380,162
+2018,France 2,Histoire-hommages,170,17657,93
+2018,France 2,International,848,76309,312
+2018,France 2,Justice,307,30769,168
+2018,France 2,Politique France,692,69315,267
+2018,France 2,Santé,166,23089,121
+2018,France 2,Sciences et techniques,69,8924,59
+2018,France 2,Société,1292,152494,336
+2018,France 2,Sport,379,32206,170
+2018,France 3,Catastrophes,547,40774,209
+2018,France 3,Culture-loisirs,255,32425,185
+2018,France 3,Economie,493,54234,249
+2018,France 3,Education,77,7957,70
+2018,France 3,Environnement,258,26411,181
+2018,France 3,Faits divers,312,23881,185
+2018,France 3,Histoire-hommages,150,14995,88
+2018,France 3,International,378,27269,198
+2018,France 3,Justice,274,23803,152
+2018,France 3,Politique France,582,51227,252
+2018,France 3,Santé,146,14810,111
+2018,France 3,Sciences et techniques,44,5887,41
+2018,France 3,Société,986,96304,317
+2018,France 3,Sport,296,20654,141
+2018,M6,Catastrophes,445,27753,236
+2018,M6,Culture-loisirs,596,60479,338
+2018,M6,Economie,435,40513,250
+2018,M6,Education,142,12879,104
+2018,M6,Environnement,193,15326,138
+2018,M6,Faits divers,352,25321,237
+2018,M6,Histoire-hommages,136,11473,83
+2018,M6,International,502,29418,268
+2018,M6,Justice,323,21639,193
+2018,M6,Politique France,456,34309,227
+2018,M6,Santé,201,20631,141
+2018,M6,Sciences et techniques,117,11679,95
+2018,M6,Société,1109,89912,335
+2018,M6,Sport,480,32921,228
+2018,TF1,Catastrophes,590,49310,211
+2018,TF1,Culture-loisirs,314,40695,203
+2018,TF1,Economie,844,103719,305
+2018,TF1,Education,173,19599,131
+2018,TF1,Environnement,354,39658,206
+2018,TF1,Faits divers,253,23181,148
+2018,TF1,Histoire-hommages,135,14732,80
+2018,TF1,International,480,45526,226
+2018,TF1,Justice,243,26361,145
+2018,TF1,Politique France,538,55051,230
+2018,TF1,Santé,190,21799,141
+2018,TF1,Sciences et techniques,154,20208,130
+2018,TF1,Société,1313,147188,339
+2018,TF1,Sport,477,45658,189
+2019,Arte,Catastrophes,67,5850,60
+2019,Arte,Culture-loisirs,286,34342,251
+2019,Arte,Economie,137,16500,114
+2019,Arte,Education,16,2455,16
+2019,Arte,Environnement,174,21412,132
+2019,Arte,Faits divers,50,5126,46
+2019,Arte,Histoire-hommages,113,11424,83
+2019,Arte,International,1635,176421,363
+2019,Arte,Justice,110,11289,97
+2019,Arte,Politique France,91,9289,79
+2019,Arte,Santé,69,7949,61
+2019,Arte,Sciences et techniques,115,10135,76
+2019,Arte,Société,330,38649,214
+2019,Arte,Sport,15,1810,15
+2019,France 2,Catastrophes,489,40514,214
+2019,France 2,Culture-loisirs,283,40614,189
+2019,France 2,Economie,809,102907,305
+2019,France 2,Education,97,12671,72
+2019,France 2,Environnement,398,50766,212
+2019,France 2,Faits divers,334,29925,159
+2019,France 2,Histoire-hommages,170,18605,92
+2019,France 2,International,789,72596,303
+2019,France 2,Justice,233,22037,155
+2019,France 2,Politique France,576,60332,256
+2019,France 2,Santé,186,24733,136
+2019,France 2,Sciences et techniques,108,14479,85
+2019,France 2,Société,1352,164301,343
+2019,France 2,Sport,178,15256,120
+2019,France 3,Catastrophes,475,35175,222
+2019,France 3,Culture-loisirs,285,35206,199
+2019,France 3,Economie,517,56265,274
+2019,France 3,Education,57,5947,48
+2019,France 3,Environnement,311,33504,189
+2019,France 3,Faits divers,331,25764,198
+2019,France 3,Histoire-hommages,158,15778,91
+2019,France 3,International,446,31402,224
+2019,France 3,Justice,250,21736,157
+2019,France 3,Politique France,566,50895,252
+2019,France 3,Santé,159,17367,120
+2019,France 3,Sciences et techniques,58,7171,54
+2019,France 3,Société,970,93444,327
+2019,France 3,Sport,155,10432,104
+2019,M6,Catastrophes,436,28705,240
+2019,M6,Culture-loisirs,594,60157,338
+2019,M6,Economie,402,37299,243
+2019,M6,Education,114,10837,92
+2019,M6,Environnement,269,20871,183
+2019,M6,Faits divers,434,31493,239
+2019,M6,Histoire-hommages,137,11962,72
+2019,M6,International,661,41564,306
+2019,M6,Justice,322,23795,206
+2019,M6,Politique France,415,31932,227
+2019,M6,Santé,196,19100,142
+2019,M6,Sciences et techniques,113,11051,98
+2019,M6,Société,1070,91479,343
+2019,M6,Sport,306,20860,195
+2019,TF1,Catastrophes,521,46745,236
+2019,TF1,Culture-loisirs,291,39665,181
+2019,TF1,Economie,850,114999,335
+2019,TF1,Education,123,15029,96
+2019,TF1,Environnement,421,53265,221
+2019,TF1,Faits divers,326,33611,163
+2019,TF1,Histoire-hommages,145,16061,77
+2019,TF1,International,418,39254,207
+2019,TF1,Justice,167,17302,121
+2019,TF1,Politique France,467,47667,220
+2019,TF1,Santé,208,24819,155
+2019,TF1,Sciences et techniques,183,26776,136
+2019,TF1,Société,1299,155766,342
+2019,TF1,Sport,166,15837,110
+2020,Arte,Catastrophes,70,7966,51
+2020,Arte,Culture-loisirs,207,27583,187
+2020,Arte,Economie,207,25271,144
+2020,Arte,Education,16,2104,14
+2020,Arte,Environnement,103,11628,84
+2020,Arte,Faits divers,30,2558,29
+2020,Arte,Histoire-hommages,83,7600,71
+2020,Arte,International,1031,114863,323
+2020,Arte,Justice,92,10112,81
+2020,Arte,Politique France,93,9841,77
+2020,Arte,Santé,652,81058,271
+2020,Arte,Sciences et techniques,72,7069,56
+2020,Arte,Société,276,34792,172
+2020,Arte,Sport,8,787,8
+2020,France 2,Catastrophes,301,24254,140
+2020,France 2,Culture-loisirs,237,30101,154
+2020,France 2,Economie,956,113512,307
+2020,France 2,Education,155,18429,118
+2020,France 2,Environnement,236,32405,158
+2020,France 2,Faits divers,146,12116,104
+2020,France 2,Histoire-hommages,137,12055,86
+2020,France 2,International,497,46142,210
+2020,France 2,Justice,155,14103,112
+2020,France 2,Politique France,492,52027,206
+2020,France 2,Santé,2674,291686,347
+2020,France 2,Sciences et techniques,77,10723,63
+2020,France 2,Société,719,79792,274
+2020,France 2,Sport,132,10256,92
+2020,France 3,Catastrophes,270,21058,124
+2020,France 3,Culture-loisirs,205,22418,143
+2020,France 3,Economie,596,62827,275
+2020,France 3,Education,90,9065,72
+2020,France 3,Environnement,146,16301,101
+2020,France 3,Faits divers,147,12612,101
+2020,France 3,Histoire-hommages,116,10236,84
+2020,France 3,International,182,14096,103
+2020,France 3,Justice,139,12302,107
+2020,France 3,Politique France,422,40087,187
+2020,France 3,Santé,1718,159873,337
+2020,France 3,Sciences et techniques,52,6599,45
+2020,France 3,Société,493,51327,240
+2020,France 3,Sport,124,8804,84
+2020,M6,Catastrophes,280,17092,168
+2020,M6,Culture-loisirs,468,48237,287
+2020,M6,Economie,526,49535,284
+2020,M6,Education,141,13841,104
+2020,M6,Environnement,133,10752,104
+2020,M6,Faits divers,248,17455,164
+2020,M6,Histoire-hommages,119,9747,87
+2020,M6,International,319,20175,178
+2020,M6,Justice,178,12386,114
+2020,M6,Politique France,386,32091,174
+2020,M6,Santé,1946,170779,344
+2020,M6,Sciences et techniques,88,7911,76
+2020,M6,Société,674,59842,275
+2020,M6,Sport,209,14984,138
+2020,TF1,Catastrophes,336,32353,159
+2020,TF1,Culture-loisirs,214,30305,138
+2020,TF1,Economie,1084,149242,329
+2020,TF1,Education,185,21983,104
+2020,TF1,Environnement,287,44467,173
+2020,TF1,Faits divers,182,17555,121
+2020,TF1,Histoire-hommages,116,14760,76
+2020,TF1,International,280,31836,137
+2020,TF1,Justice,104,12292,82
+2020,TF1,Politique France,424,48076,175
+2020,TF1,Santé,3073,346809,345
+2020,TF1,Sciences et techniques,114,19331,99
+2020,TF1,Société,805,104324,286
+2020,TF1,Sport,86,8044,61

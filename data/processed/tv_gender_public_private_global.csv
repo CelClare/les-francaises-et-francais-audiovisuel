@@ -1,0 +1,3 @@
+is_public_channel,avg_female_share_all_years,avg_male_share_all_years,total_female_duration_all_years,total_male_duration_all_years,n_obs
+False,0.2832128891500919,0.7167871108499082,246098168.94,634506273.0600001,322067
+True,0.33118603089765414,0.6688139691023459,114889789.06,229101856.06,119912
