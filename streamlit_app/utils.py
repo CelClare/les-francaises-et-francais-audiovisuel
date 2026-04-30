@@ -269,6 +269,9 @@ def load_data():
     theme_gender_proxy = load_csv_fallback("theme_gender_proxy.csv")
     theme_gender_proxy_by_theme = load_csv_fallback("theme_gender_proxy_by_theme.csv")
 
+    # Parole selon les genres de programmes
+    csa_program_genres = load_csv_fallback("csa_program_genres_clean.csv")
+
     return (
         gender_year_channel,
         gender_year_public_private,
@@ -281,7 +284,8 @@ def load_data():
         theme_gender_proxy_by_theme,
         jt_theme_volatility,
         jt_editorial_composition,
-        gender_by_hour       
+        gender_by_hour,
+        csa_program_genres,       
     )
 
 

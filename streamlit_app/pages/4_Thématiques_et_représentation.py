@@ -28,6 +28,7 @@ inject_global_css()
     jt_theme_volatility,
     jt_editorial_composition,
     gender_by_hour,
+    csa_program_genres,
 ) = load_data()
 
 st.title("Mettre en regard thèmes et temps de parole")
@@ -161,7 +162,7 @@ st.divider()
 # 3. CE QUE CETTE EXPLORATION PERMET — ET NE PERMET PAS ENCORE
 # =========================================================
 st.markdown(
-    '<div class="section-title">Ce que cette exploration permet — et ne permet pas encore</div>',
+    '<div class="section-title">Ce que cette exploration permet</div>',
     unsafe_allow_html=True,
 )
 
@@ -217,9 +218,9 @@ st.divider()
 st.markdown(
     """
     <div class="section-note">
-    <strong>Conclusion de l’exploration :</strong> cette page ne démontre pas encore un biais de genre par thématique,
-    mais elle prépare ce terrain en montrant comment la structure éditoriale des JT peut être mise en regard avec la
-    représentation femmes / hommes à une échelle plus globale.
+    <strong>Conclusion :</strong> cette page montre les limites d’un croisement indirect entre thèmes des JT et part féminine moyenne.
+    Pour aller plus loin, la page suivante mobilise un autre jeu de données : les genres de programmes, qui permettent
+    d’approcher plus directement les contextes dans lesquels la parole féminine est mesurée.
     </div>
     """,
     unsafe_allow_html=True,

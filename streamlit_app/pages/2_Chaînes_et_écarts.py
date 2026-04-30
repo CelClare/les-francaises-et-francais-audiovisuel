@@ -29,7 +29,8 @@ inject_global_css()
     theme_gender_proxy_by_theme,
     jt_theme_volatility,
     jt_editorial_composition,
-    gender_by_hour
+    gender_by_hour,
+    csa_program_genres,
 ) = load_data()
 
 st.title("Comparer les chaînes : des écarts structurels ?")
