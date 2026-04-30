@@ -13,3 +13,6 @@ def load_barometer_jt() -> pd.DataFrame:
         encoding="latin1",
         header=None
     )
+
+def load_csa_program_genres() -> pd.DataFrame:
+    return pd.read_csv(RAW_DATA_DIR / "ina-csa-parole-femmes-genreprogramme.csv")

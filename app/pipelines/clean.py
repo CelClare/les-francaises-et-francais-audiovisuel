@@ -80,3 +80,65 @@ def clean_barometer_jt(df: pd.DataFrame) -> pd.DataFrame:
     df["duration"] = df["duration"].astype(int)
 
     return df
+
+def clean_csa_program_genres(df: pd.DataFrame) -> pd.DataFrame:
+    rows = []
+
+    for year in [2019, 2020]:
+        tmp = df[[
+            "genre",
+            f"nb_declarations_{year}",
+            f"total_declarations_duration_{year}",
+            f"women_speech_duration_{year}",
+            f"men_speech_duration_{year}",
+            f"other_duration_{year}",
+            f"women_expression_rate_{year}",
+            f"speech_rate_{year}",
+        ]].copy()
+
+        tmp.columns = [
+            "program_genre",
+            "nb_declarations",
+            "total_declarations_duration",
+            "women_speech_duration",
+            "men_speech_duration",
+            "other_duration",
+            "women_expression_rate",
+            "speech_rate",
+        ]
+
+        tmp["year"] = year
+        rows.append(tmp)
+
+    clean = pd.concat(rows, ignore_index=True)
+
+    numeric_cols = [
+        "nb_declarations",
+        "total_declarations_duration",
+        "women_speech_duration",
+        "men_speech_duration",
+        "other_duration",
+        "women_expression_rate",
+        "speech_rate",
+    ]
+
+    for col in numeric_cols:
+        clean[col] = pd.to_numeric(clean[col], errors="coerce")
+
+    clean = clean.dropna(subset=["program_genre"])
+
+    clean = clean[
+        [
+            "year",
+            "program_genre",
+            "nb_declarations",
+            "total_declarations_duration",
+            "women_speech_duration",
+            "men_speech_duration",
+            "other_duration",
+            "women_expression_rate",
+            "speech_rate",
+        ]
+    ]
+
+    return clean

@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from app.pipelines.collect import load_stats, load_barometer_jt
-from app.pipelines.clean import clean_stats, clean_barometer_jt
+from app.pipelines.collect import load_stats, load_barometer_jt, load_csa_program_genres
+from app.pipelines.clean import clean_stats, clean_barometer_jt, clean_csa_program_genres
 from app.pipelines.aggregate import (
     aggregate_gender_by_year_channel,
     aggregate_jt_topics_by_year_channel_theme,
@@ -14,6 +14,11 @@ from app.pipelines.aggregate import (
     aggregate_theme_gender_proxy,
     aggregate_theme_gender_proxy_by_theme,
     aggregate_jt_theme_volatility,
+    aggregate_jt_topics_by_channel_theme,
+    aggregate_jt_editorial_composition,
+    aggregate_jt_topics_public_private,
+    aggregate_gender_by_hour,
+    aggregate_gender_by_hour_channel,
 )
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -25,13 +30,17 @@ def main() -> None:
     # Collect
     stats_raw = load_stats()
     jt_raw = load_barometer_jt()
-
+    csa_program_genres_raw = load_csa_program_genres()
+    
     # Clean
     # Source 1 : 20190308-stats.csv -> représentation femmes / hommes à la TV
     stats_clean = clean_stats(stats_raw)
 
     # Source 2 : baromètre JT -> thématiques des journaux télévisés
     jt_clean = clean_barometer_jt(jt_raw)
+
+    # Source 3 : CSA - Genre des programmes
+    csa_program_genres_clean = clean_csa_program_genres(csa_program_genres_raw)
 
     # Aggregate
     # ---------------------------------------------------------
@@ -42,6 +51,9 @@ def main() -> None:
     gender_year_category = aggregate_gender_by_year_category(stats_clean)
     gender_category = aggregate_gender_by_category(stats_clean)
     gender_public_private_global = aggregate_gender_public_private_global(stats_clean)
+    gender_by_hour = aggregate_gender_by_hour(stats_clean)
+    gender_by_hour_channel = aggregate_gender_by_hour_channel(stats_clean)
+
 
     # ---------------------------------------------------------
     # Agrégations issues du baromètre JT
@@ -51,6 +63,10 @@ def main() -> None:
     jt_topics_global = aggregate_jt_topics_global(jt_clean)
 
     jt_theme_volatility = aggregate_jt_theme_volatility(jt_year_theme)
+
+    jt_channel_theme = aggregate_jt_topics_by_channel_theme(jt_clean)
+    jt_editorial_composition = aggregate_jt_editorial_composition(jt_clean)
+    jt_public_private_theme = aggregate_jt_topics_public_private(jt_clean, stats_clean)
 
     # ---------------------------------------------------------
     # Croisement exploratoire thème × genre
@@ -72,6 +88,7 @@ def main() -> None:
     # ---------------------------------------------------------
     stats_clean.to_csv(PROCESSED_DIR / "tv_gender_stats_clean.csv", index=False)
     jt_clean.to_csv(PROCESSED_DIR / "jt_topics_clean.csv", index=False)
+    csa_program_genres_clean.to_csv(PROCESSED_DIR / "csa_program_genres_clean.csv", index=False)
 
     # ---------------------------------------------------------
     # Sauvegarde des tables agrégées issues de 20190308-stats.csv
@@ -91,6 +108,12 @@ def main() -> None:
     gender_public_private_global.to_csv(
         PROCESSED_DIR / "tv_gender_public_private_global.csv", index=False
     )
+    gender_by_hour.to_csv(
+        PROCESSED_DIR / "tv_gender_by_hour.csv", index=False
+    )
+    gender_by_hour_channel.to_csv(
+        PROCESSED_DIR / "tv_gender_by_hour_channel.csv", index=False
+    )
 
     # ---------------------------------------------------------
     # Sauvegarde des tables agrégées issues du baromètre JT
@@ -106,6 +129,15 @@ def main() -> None:
     )
     jt_theme_volatility.to_csv(
         PROCESSED_DIR / "jt_theme_volatility.csv", index=False
+    )
+    jt_channel_theme.to_csv(
+        PROCESSED_DIR / "jt_topics_by_channel_theme.csv", index=False
+    )
+    jt_editorial_composition.to_csv(
+        PROCESSED_DIR / "jt_editorial_composition.csv", index=False
+    )
+    jt_public_private_theme.to_csv(
+        PROCESSED_DIR / "jt_topics_public_private_theme.csv", index=False
     )
 
     # ---------------------------------------------------------

@@ -26,13 +26,20 @@ inject_global_css()
     theme_gender_proxy,
     theme_gender_proxy_by_theme,
     jt_theme_volatility,
+    jt_editorial_composition,
+    gender_by_hour,
 ) = load_data()
 
-st.title("Thématiques et représentation : premières pistes")
+st.title("Mettre en regard thèmes et temps de parole")
 
 st.markdown(
-    '<div class="subtitle">Cette page propose une première exploration du lien entre structure thématique des JT et représentation femmes / hommes. Elle permet de formuler des hypothèses, sans établir de relation causale.</div>',
+    '<div class="subtitle">Cette page explore une hypothèse : certains contextes thématiques peuvent être associés à des niveaux différents de représentation femmes / hommes. Le croisement proposé reste indirect : il met en regard le poids d’un thème dans les JT et la part féminine moyenne d’une chaîne sur une année.</div>',
     unsafe_allow_html=True,
+)
+
+st.info(
+    "Important : ce graphique ne mesure pas la part de parole féminine à l’intérieur de chaque sujet. "
+    "Il observe seulement si, pour une chaîne et une année données, le poids d’une thématique varie avec la part féminine moyenne globale."
 )
 
 st.divider()
@@ -106,11 +113,18 @@ fig_proxy.update_traces(
 fig_proxy.update_xaxes(tickformat=".0%")
 fig_proxy.update_yaxes(tickformat=".0%")
 fig_proxy = beautify_plot(fig_proxy, legend_orientation="v", right_margin=170)
+fig_proxy.update_layout(height=650)
 st.plotly_chart(fig_proxy, width="stretch")
 
-selected_theme_summary = theme_gender_proxy_by_theme[
+selected_theme_summary_df = theme_gender_proxy_by_theme[
     theme_gender_proxy_by_theme["theme"] == selected_proxy_theme
-].iloc[0]
+]
+
+if selected_theme_summary_df.empty:
+    st.warning("Aucune donnée synthétique disponible pour cette thématique.")
+    st.stop()
+
+selected_theme_summary = selected_theme_summary_df.iloc[0]
 
 female_share_range = (
     proxy_filtered["avg_female_share"].max() - proxy_filtered["avg_female_share"].min()
@@ -126,7 +140,7 @@ col1.metric(
     delta_color="off",
 )
 col2.metric(
-    "Part féminine moyenne associée",
+    "Part féminine moyenne observée",
     f"{selected_theme_summary['avg_female_share']:.1%}",
     delta_color="off",
 )

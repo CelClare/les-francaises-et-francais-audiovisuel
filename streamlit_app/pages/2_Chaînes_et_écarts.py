@@ -7,6 +7,7 @@ from utils import (
     beautify_plot,
     CHAIN_COMPARE_COLORS,
     HEATMAP_SCALE,
+    PUBLIC_PRIVATE_COLORS
 )
 
 st.set_page_config(
@@ -27,17 +28,25 @@ inject_global_css()
     theme_gender_proxy,
     theme_gender_proxy_by_theme,
     jt_theme_volatility,
+    jt_editorial_composition,
+    gender_by_hour
 ) = load_data()
 
-st.title("Comparer les écarts selon les chaînes")
+st.title("Comparer les chaînes : des écarts structurels ?")
 
 st.markdown(
     '<div class="subtitle">Après une première lecture globale, cette page observe comment les écarts de représentation femmes / hommes se traduisent à l’échelle de chaînes particulières.</div>',
     unsafe_allow_html=True,
 )
 
+st.info(
+    "Un écart global peut masquer des situations très différentes selon les chaînes. "
+    "Cette page permet d’observer quelles chaînes contribuent le plus aux déséquilibres, "
+    "et lesquelles présentent des trajectoires plus favorables."
+)
+
 st.markdown(
-    '<div class="section-note">L’objectif n’est plus de décrire une tendance générale, mais de comparer des trajectoires particulières. Cette étape permet de voir si la lecture globale masque des profils de chaînes plus contrastés, ou au contraire confirme une dynamique plus générale.</div>',
+    '<div class="subtitle">L’objectif n’est plus de décrire une tendance générale, mais de comparer des trajectoires particulières. Cette étape permet de voir si la lecture globale masque des profils de chaînes plus contrastés, ou au contraire confirme une dynamique plus générale.</div>',
     unsafe_allow_html=True,
 )
 
@@ -112,6 +121,13 @@ else:
         )
 
         fig_compare.update_yaxes(tickformat=".0%")
+
+        fig_compare.update_xaxes(
+            tickmode="array",
+            tickvals=sorted(filtered_compare["year"].unique()),
+            ticktext=[str(year) for year in sorted(filtered_compare["year"].unique())],
+        )
+
         fig_compare.update_traces(
             line=dict(width=3),
             marker=dict(size=7),
@@ -139,6 +155,13 @@ else:
             title="Heatmap de la part féminine moyenne des chaînes sélectionnées",
         )
         fig_compare_heatmap.update_coloraxes(colorbar_tickformat=".0%")
+
+        fig_compare_heatmap.update_xaxes(
+            tickmode="array",
+            tickvals=sorted(filtered_compare["year"].unique()),
+            ticktext=[str(year) for year in sorted(filtered_compare["year"].unique())],
+        )
+
         fig_compare_heatmap.update_layout(
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
@@ -286,3 +309,64 @@ else:
             """,
             unsafe_allow_html=True,
         )
+
+# ============================
+# CLASSEMENT FINAL DES CHAÎNES
+# ============================
+
+st.divider()
+
+st.markdown(
+    '<div class="section-title">Classement des chaînes en fin de période</div>',
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    '<div class="section-note">Ce classement permet d’identifier rapidement les chaînes où la part féminine moyenne est la plus élevée ou la plus faible en fin de période.</div>',
+    unsafe_allow_html=True,
+)
+
+latest_year = gender_year_channel["year"].max()
+
+latest_ranking = (
+    gender_year_channel[gender_year_channel["year"] == latest_year]
+    .copy()
+    .sort_values("avg_female_share", ascending=True)
+)
+
+latest_ranking["channel_type"] = latest_ranking["is_public_channel"].map(
+    {True: "Public", False: "Privé"}
+)
+
+fig_ranking = px.bar(
+    latest_ranking,
+    x="avg_female_share",
+    y="channel_name",
+    orientation="h",
+    color="channel_type",
+    color_discrete_map=PUBLIC_PRIVATE_COLORS,
+    labels={
+        "avg_female_share": "Part féminine moyenne",
+        "channel_name": "Chaîne",
+        "is_public_channel": "Chaîne publique",
+    },
+    title=f"Classement des chaînes selon la part féminine moyenne en {latest_year}",
+)
+
+fig_ranking.update_xaxes(tickformat=".0%")
+
+fig_ranking.update_traces(
+    texttemplate="%{x:.1%}",
+    textposition="outside",
+    cliponaxis=False,
+)
+
+fig_ranking = beautify_plot(fig_ranking, legend_orientation="h")
+
+fig_ranking.update_layout(
+    height=max(650, 28 * len(latest_ranking)),
+    margin=dict(l=140, r=80, t=80, b=40),
+    showlegend=True,
+)
+
+st.plotly_chart(fig_ranking, width="stretch")

@@ -3,7 +3,7 @@ import plotly.express as px
 
 from utils import (
     inject_global_css,
-    load_data,
+    load_page1_data,
     beautify_plot,
     PUBLIC_PRIVATE_COLORS,
     VARIATION_COLORS,
@@ -11,7 +11,7 @@ from utils import (
 )
 
 st.set_page_config(
-    page_title="Représentation globale femmes / hommes",
+    page_title="Mesurer le temps de parole femmes / hommes",
     layout="wide",
 )
 
@@ -21,23 +21,22 @@ inject_global_css()
     gender_year_channel,
     gender_year_public_private,
     gender_year_category,
-    gender_public_private_global,
-    jt_year_channel_theme,
-    jt_year_theme,
-    jt_topics_global,
-    theme_gender_proxy,
-    theme_gender_proxy_by_theme,
-    jt_theme_volatility,
-) = load_data()
+    gender_by_hour,
+) = load_page1_data()
 
-st.title("Représentation globale femmes / hommes")
+st.title("Mesurer le temps de parole femmes / hommes")
+
 st.markdown(
-    '<div class="subtitle">Cette page propose une lecture d’ensemble des écarts de représentation femmes / hommes dans l’audiovisuel télévisé français.</div>',
+    '<div class="subtitle">Cette page pose le premier constat : les femmes disposent d’un temps de parole inférieur à celui des hommes à la télévision, avec des écarts qui varient selon les années, les chaînes et les catégories éditoriales.</div>',
     unsafe_allow_html=True,
 )
 
+st.info(
+    "Présence, parole et autorité ne se confondent pas : cette page mesure la parole, les pages suivantes interrogent les contextes dans lesquels cette parole apparaît."
+)
+
 st.markdown(
-    '<div class="section-note">Elle sert de point de départ avant d’entrer dans des comparaisons plus ciblées entre chaînes et dans l’analyse des thématiques des JT.</div>',
+    '<div class="subtitle">Le temps de parole permet de mesurer une inégalité quantitative. Mais il ne dit pas encore si les femmes parlent comme journalistes, expertes, invitées politiques, témoins ou anonymes.</div>',
     unsafe_allow_html=True,
 )
 
@@ -116,6 +115,7 @@ strongest_decline = (
 )
 
 col1, col2, col3 = st.columns(3)
+
 col1.metric("Part féminine moyenne globale", f"{global_avg:.1%}")
 col2.metric("Écart public / privé en fin de période", f"{gap:.1%}")
 col3.metric(
@@ -133,8 +133,9 @@ st.markdown(
     '<div class="section-title">Vue d’ensemble : chaînes publiques et privées</div>',
     unsafe_allow_html=True,
 )
+
 st.markdown(
-    '<div class="section-note">Cette visualisation agrège l’ensemble des chaînes publiques d’un côté et privées de l’autre. Elle donne donc une tendance globale, et non une comparaison entre chaînes individuelles.</div>',
+    '<div class="section-note">Cette visualisation agrège l’ensemble des chaînes publiques d’un côté et privées de l’autre. Elle donne une tendance globale, et non une comparaison entre chaînes individuelles.</div>',
     unsafe_allow_html=True,
 )
 
@@ -157,14 +158,76 @@ fig_public_private = px.line(
     },
     title="Évolution de la part féminine moyenne : public vs privé",
 )
+
 fig_public_private.update_yaxes(tickformat=".0%")
+fig_public_private.update_xaxes(
+    tickmode="array",
+    tickvals=sorted(gender_year_public_private_plot["year"].unique()),
+    ticktext=[str(year) for year in sorted(gender_year_public_private_plot["year"].unique())],
+)
+
 fig_public_private.update_traces(
     line=dict(width=4),
     marker=dict(size=8),
     line_shape="spline",
 )
+
 fig_public_private = beautify_plot(fig_public_private)
 st.plotly_chart(fig_public_private, width="stretch")
+
+st.divider()
+
+# =========================
+# HEURE DE DIFFUSION
+# =========================
+st.markdown(
+    '<div class="section-title">À quelles heures les femmes parlent-elles le plus ?</div>',
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    '<div class="section-note">Cette visualisation observe la part féminine moyenne selon l’heure de diffusion. Elle permet de questionner les écarts entre moments de forte audience et autres créneaux.</div>',
+    unsafe_allow_html=True,
+)
+
+fig_hour = px.line(
+    gender_by_hour,
+    x="hour",
+    y="avg_female_share",
+    markers=True,
+    labels={
+        "hour": "Heure de diffusion",
+        "avg_female_share": "Part féminine moyenne",
+    },
+    title="Part féminine moyenne selon l’heure de diffusion",
+)
+
+fig_hour.update_yaxes(tickformat=".0%")
+
+fig_hour.update_xaxes(
+    tickmode="array",
+    tickvals=sorted(gender_by_hour["hour"].unique()),
+    ticktext=[str(hour) for hour in sorted(gender_by_hour["hour"].unique())],
+)
+
+fig_hour.update_traces(
+    line=dict(width=4, color="#E07A5F"),
+    marker=dict(size=8, color="#E07A5F"),
+    line_shape="spline",
+)
+
+fig_hour = beautify_plot(fig_hour)
+st.plotly_chart(fig_hour, width="stretch")
+
+st.markdown(
+    """
+    <div class="section-note">
+    <strong>Point d’attention :</strong> les heures de diffusion ne disent pas seulement quand les femmes parlent.
+    Elles permettent aussi d’interroger la visibilité de cette parole aux moments les plus exposés.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 st.divider()
 
@@ -175,6 +238,7 @@ st.markdown(
     '<div class="section-title">Lecture par catégories éditoriales</div>',
     unsafe_allow_html=True,
 )
+
 st.markdown(
     '<div class="section-note">Cette lecture ne correspond pas directement à l’opposition public / privé. Elle permet plutôt d’identifier des univers de programmation plus ou moins favorables à la représentation féminine.</div>',
     unsafe_allow_html=True,
@@ -190,6 +254,7 @@ with st.expander("Choisir les catégories à afficher", expanded=False):
     )
 
 filtered_category_year = gender_year_category.copy()
+
 if selected_categories:
     filtered_category_year = filtered_category_year[
         filtered_category_year["channel_category"].isin(selected_categories)
@@ -212,7 +277,14 @@ fig_category_heatmap = px.imshow(
     },
     title="Heatmap de la part féminine moyenne par catégorie de chaîne",
 )
+
 fig_category_heatmap.update_coloraxes(colorbar_tickformat=".0%")
+fig_category_heatmap.update_xaxes(
+    tickmode="array",
+    tickvals=sorted(filtered_category_year["year"].unique()),
+    ticktext=[str(year) for year in sorted(filtered_category_year["year"].unique())],
+)
+
 fig_category_heatmap.update_layout(
     paper_bgcolor="rgba(0,0,0,0)",
     plot_bgcolor="rgba(0,0,0,0)",
@@ -223,6 +295,7 @@ fig_category_heatmap.update_layout(
     ),
     margin=dict(l=20, r=20, t=80, b=20),
 )
+
 st.plotly_chart(fig_category_heatmap, width="stretch")
 
 st.divider()
@@ -234,6 +307,7 @@ st.markdown(
     '<div class="section-title">Qui monte, qui baisse, entre 2010 et 2019 ?</div>',
     unsafe_allow_html=True,
 )
+
 st.markdown(
     '<div class="section-note">Cette visualisation montre la variation entre le début et la fin de période par catégorie, afin de mieux repérer les progressions, stagnations et régressions.</div>',
     unsafe_allow_html=True,
@@ -247,6 +321,7 @@ category_variation["direction"] = category_variation["delta"].apply(
 show_other = st.checkbox("Inclure la catégorie « Autre »", value=False)
 
 variation_chart = category_variation.copy()
+
 if not show_other:
     variation_chart = variation_chart[
         variation_chart["channel_category"] != "Autre"
@@ -269,11 +344,13 @@ fig_variation = px.bar(
     title="Variation de la part féminine moyenne entre 2010 et 2019 par catégorie",
     text="delta",
 )
+
 fig_variation.update_xaxes(tickformat=".0%")
 fig_variation.update_traces(
     texttemplate="%{text:.1%}",
     textposition="outside",
 )
+
 fig_variation = beautify_plot(fig_variation)
 st.plotly_chart(fig_variation, width="stretch")
 

@@ -2,35 +2,59 @@ import streamlit as st
 from utils import inject_global_css
 
 st.set_page_config(
-    page_title="Les Françaises et Français face à l'information",
+    page_title="Les Françaises et les Français face à l'information",
     layout="wide",
 )
 
 inject_global_css()
 
-st.title("Les Françaises et Français face à l'information")
+st.title("Les Françaises et les Français face à l'information")
+
 st.markdown(
-    '<div class="subtitle">Application d’exploration des données INA sur la représentation femmes / hommes dans l’audiovisuel télévisé français, éclairée par les contextes éditoriaux des journaux télévisés.</div>',
+    """
+    <div class="subtitle">
+    Application d’analyse de la représentation femmes / hommes à la télévision française.
+    </div>
+    """,
     unsafe_allow_html=True,
 )
+
+st.markdown("### Dimensions de l'analyse")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.info("**Présence**\n\nÊtre visible à l’antenne")
+
+with col2:
+    st.info("**Parole**\n\nDisposer d’un temps d’expression")
+
+with col3:
+    st.info("**Autorité**\n\nÊtre reconnue comme experte, journaliste ou responsable")
 
 st.divider()
 
 st.markdown(
     """
-    ### Bienvenue
+    ### Objectif
 
-    Cette application s’organise autour de quatre questions :
+    À partir de données ouvertes issues de l’INA, cette application explore les écarts de temps de parole entre femmes et hommes, mais aussi les contextes éditoriaux dans lesquels ces écarts apparaissent.
 
-    - **Y a-t-il des écarts globaux de représentation femmes / hommes dans l’audiovisuel télévisé français ?**
-    - **Ces écarts se retrouvent-ils de la même manière selon les chaînes, ou observe-t-on des trajectoires différentes ?**
-    - **Dans quels environnements thématiques ces écarts prennent-ils forme ?**
-    - **Peut-on commencer à rapprocher structure éditoriale et représentation femmes / hommes ?**
+    L’objectif n’est pas seulement de mesurer **qui parle le plus**, mais d’interroger comment la parole est distribuée selon les chaînes, les thématiques et les formats de programmes.
 
-    La démarche part d’un **diagnostic global**, puis descend à une échelle plus fine en observant les **chaînes**, les **journaux télévisés** et enfin un **croisement exploratoire** entre structure thématique et représentation moyenne.
+    Cette application propose une lecture en quatre niveaux :
 
-    L’objectif n’est pas seulement de décrire des écarts, mais de mieux comprendre **dans quels contextes éditoriaux** ils prennent forme et comment ils peuvent être interprétés.
+    - **Mesurer** les écarts de temps de parole entre femmes et hommes
+    - **Comparer** les trajectoires des chaînes et leurs différences structurelles
+    - **Contextualiser** ces écarts à partir des thématiques des journaux télévisés
+    - **Interpréter** ce que les données montrent, suggèrent, et ne permettent pas encore de démontrer
 
-    Utilisez la navigation latérale de Streamlit pour parcourir les différentes pages.
+    Les données mobilisées permettent de mesurer des écarts de parole, mais elles ne renseignent pas directement le rôle ou le statut des personnes qui s’expriment.
+
+    Ainsi, une présence accrue des femmes à l’antenne ne signifie pas nécessairement une égalité de position ou d’autorité.
+
+    L’application propose donc une lecture critique des indicateurs disponibles, en mettant en évidence leurs apports et leurs limites.
+
+    Utilisez la navigation latérale pour explorer les différentes dimensions de l’analyse.
     """
 )

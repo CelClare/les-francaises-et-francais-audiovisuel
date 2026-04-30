@@ -193,3 +193,93 @@ def aggregate_jt_theme_volatility(df: pd.DataFrame) -> pd.DataFrame:
     )
 
     return volatility.sort_values("coeff_variation", ascending=False)
+
+def aggregate_jt_topics_by_channel_theme(df: pd.DataFrame) -> pd.DataFrame:
+    return (
+        df.groupby(["channel_name", "theme"], as_index=False)
+        .agg(
+            total_subjects=("nb_subjects", "sum"),
+            total_duration=("duration", "sum"),
+            n_days=("date", "nunique"),
+        )
+    )
+
+def aggregate_jt_editorial_composition(df: pd.DataFrame) -> pd.DataFrame:
+    temp = df.copy()
+    temp["year"] = temp["date"].dt.year
+
+    grouped = (
+        temp.groupby(["year", "channel_name", "theme"], as_index=False)
+        .agg(
+            total_subjects=("nb_subjects", "sum"),
+            total_duration=("duration", "sum"),
+            n_days=("date", "nunique"),
+        )
+    )
+
+    totals = (
+        grouped.groupby(["year", "channel_name"], as_index=False)
+        .agg(
+            total_subjects_channel_year=("total_subjects", "sum"),
+            total_duration_channel_year=("total_duration", "sum"),
+        )
+    )
+
+    result = grouped.merge(totals, on=["year", "channel_name"], how="left")
+
+    result["theme_share_subjects"] = (
+        result["total_subjects"] / result["total_subjects_channel_year"]
+    )
+
+    result["theme_share_duration"] = (
+        result["total_duration"] / result["total_duration_channel_year"]
+    )
+
+    return result.sort_values(["year", "channel_name", "theme"])
+
+def aggregate_jt_topics_public_private(
+    jt_clean: pd.DataFrame,
+    stats_clean: pd.DataFrame,
+) -> pd.DataFrame:
+    channel_status = (
+        stats_clean[["channel_name", "is_public_channel"]]
+        .drop_duplicates()
+    )
+
+    temp = jt_clean.copy()
+    temp["year"] = temp["date"].dt.year
+
+    temp = temp.merge(channel_status, on="channel_name", how="left")
+
+    return (
+        temp.groupby(["year", "is_public_channel", "theme"], as_index=False)
+        .agg(
+            total_subjects=("nb_subjects", "sum"),
+            total_duration=("duration", "sum"),
+            n_days=("date", "nunique"),
+        )
+    )
+
+def aggregate_gender_by_hour(df: pd.DataFrame) -> pd.DataFrame:
+    return (
+        df.groupby("hour", as_index=False)
+        .agg(
+            avg_female_share=("female_share", "mean"),
+            avg_male_share=("male_share", "mean"),
+            total_female_duration=("female_duration", "sum"),
+            total_male_duration=("male_duration", "sum"),
+            n_obs=("date", "count"),
+        )
+    )
+
+def aggregate_gender_by_hour_channel(df: pd.DataFrame) -> pd.DataFrame:
+    return (
+        df.groupby(["hour", "channel_name"], as_index=False)
+        .agg(
+            avg_female_share=("female_share", "mean"),
+            avg_male_share=("male_share", "mean"),
+            total_female_duration=("female_duration", "sum"),
+            total_male_duration=("male_duration", "sum"),
+            n_obs=("date", "count"),
+        )
+    )

@@ -25,6 +25,8 @@ inject_global_css()
     theme_gender_proxy,
     theme_gender_proxy_by_theme,
     jt_theme_volatility,
+    jt_editorial_composition,
+    gender_by_hour
 ) = load_data()
 
 st.title("Dans quels contextes thématiques apparaissent les écarts ?")
@@ -34,7 +36,7 @@ st.markdown(
 )
 
 st.markdown(
-    '<div class="section-note">Cette page s’appuie sur le baromètre thématique des journaux télévisés. Le périmètre est donc plus restreint que celui des pages précédentes et concerne uniquement les chaînes présentes dans ce jeu de données.</div>',
+    '<div class="subtitle">Cette page s’appuie sur le baromètre thématique des journaux télévisés. Le périmètre est donc plus restreint que celui des pages précédentes et concerne uniquement les chaînes présentes dans ce jeu de données.</div>',
     unsafe_allow_html=True,
 )
 
@@ -157,6 +159,75 @@ if not filtered_topics.empty:
 st.divider()
 
 # =========================================================
+# COMPOSITION ÉDITORIALE
+# =========================================================
+st.markdown(
+    '<div class="section-title">Quelle part occupe chaque thème dans le JT ?</div>',
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    '<div class="section-note">Cette visualisation ne montre plus seulement le nombre de sujets, mais la part relative de chaque thème dans la composition éditoriale d’une chaîne pour une année donnée.</div>',
+    unsafe_allow_html=True,
+)
+
+composition_filtered = jt_editorial_composition[
+    (jt_editorial_composition["channel_name"] == selected_channel)
+    & (jt_editorial_composition["year"] == selected_year)
+].copy()
+
+composition_filtered = composition_filtered.sort_values(
+    "theme_share_subjects",
+    ascending=False,
+)
+
+fig_composition = px.bar(
+    composition_filtered,
+    x="theme",
+    y="theme_share_subjects",
+    labels={
+        "theme": "Thématique",
+        "theme_share_subjects": "Part dans les sujets du JT",
+    },
+    title=f"Composition éditoriale — {selected_channel} ({selected_year})",
+)
+
+fig_composition.update_yaxes(
+    tickformat=".0%",
+    range=[0, composition_filtered["theme_share_subjects"].max() * 1.18],
+)
+
+fig_composition.update_traces(
+    marker_color="#F2CC8F",
+    marker_line_color="#F2CC8F",
+    marker_line_width=0.5,
+    texttemplate="%{y:.1%}",
+    textposition="outside",
+    cliponaxis=False,
+)
+
+fig_composition = beautify_plot(fig_composition)
+
+fig_composition.update_layout(
+    height=650,
+    margin=dict(l=80, r=80, t=100, b=120),
+    showlegend=False,
+)
+
+st.plotly_chart(fig_composition, width="stretch")
+
+st.markdown(
+    """
+    <div class="section-note">
+    <strong>Point de méthode :</strong> cette composition éditoriale ne mesure pas directement la parole des femmes et des hommes dans chaque thème. Elle permet seulement de situer les environnements thématiques dans lesquels les écarts de représentation peuvent être interprétés.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.divider()
+
+# =========================================================
 # 3. ÉVOLUTION D’UNE THÉMATIQUE DANS LE TEMPS
 # =========================================================
 st.markdown(
@@ -193,6 +264,12 @@ fig_theme.update_traces(
     marker=dict(size=7, color="#3D405B"),
     line_shape="spline",
 )
+fig_theme.update_xaxes(
+    tickmode="array",
+    tickvals=sorted(filtered_theme["year"].unique()),
+    ticktext=[str(year) for year in sorted(filtered_theme["year"].unique())],
+)
+
 fig_theme = beautify_plot(fig_theme)
 st.plotly_chart(fig_theme, width="stretch")
 

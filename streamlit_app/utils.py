@@ -212,6 +212,27 @@ HEATMAP_SCALE = [
 
 
 @st.cache_data
+def load_page1_data():
+    try:
+        gender_year_channel = fetch_api_data("/gender/year-channel")
+    except Exception:
+        gender_year_channel = load_csv_fallback("tv_gender_by_year_channel.csv")
+
+    try:
+        gender_year_public_private = fetch_api_data("/gender/public-private")
+    except Exception:
+        gender_year_public_private = load_csv_fallback("tv_gender_by_year_public_private.csv")
+
+    gender_year_category = load_csv_fallback("tv_gender_by_year_category.csv")
+    gender_by_hour = load_csv_fallback("tv_gender_by_hour.csv")
+
+    return (
+        gender_year_channel,
+        gender_year_public_private,
+        gender_year_category,
+        gender_by_hour,
+    )
+
 def load_data():
 
     # Certaines tables sont récupérées via l’API déployée.
@@ -230,6 +251,7 @@ def load_data():
 
     gender_year_category = load_csv_fallback("tv_gender_by_year_category.csv")
     gender_public_private_global = load_csv_fallback("tv_gender_public_private_global.csv")
+    gender_by_hour = load_csv_fallback("tv_gender_by_hour.csv")
 
     # Thématiques JT
     jt_year_channel_theme = load_csv_fallback("jt_topics_by_year_channel_theme.csv")
@@ -241,6 +263,7 @@ def load_data():
 
     jt_topics_global = load_csv_fallback("jt_topics_global.csv")
     jt_theme_volatility = load_csv_fallback("jt_theme_volatility.csv")
+    jt_editorial_composition = load_csv_fallback("jt_editorial_composition.csv")
 
     # Croisement exploratoire thème × genre
     theme_gender_proxy = load_csv_fallback("theme_gender_proxy.csv")
@@ -257,6 +280,8 @@ def load_data():
         theme_gender_proxy,
         theme_gender_proxy_by_theme,
         jt_theme_volatility,
+        jt_editorial_composition,
+        gender_by_hour       
     )
 
 

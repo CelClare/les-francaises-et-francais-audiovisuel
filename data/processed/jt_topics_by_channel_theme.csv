@@ -1,0 +1,71 @@
+channel_name,theme,total_subjects,total_duration,n_days
+Arte,Catastrophes,2209,151674,1707
+Arte,Culture-loisirs,6122,825080,4286
+Arte,Economie,4737,465117,3203
+Arte,Education,490,58862,446
+Arte,Environnement,2223,221893,1762
+Arte,Faits divers,825,61889,750
+Arte,Histoire-hommages,1860,171467,1434
+Arte,International,34745,3065060,7526
+Arte,Justice,3504,279335,2653
+Arte,Politique France,3235,314625,2339
+Arte,Santé,1888,196242,1323
+Arte,Sciences et techniques,1312,106797,1085
+Arte,Société,9889,947051,5338
+Arte,Sport,605,56930,507
+France 2,Catastrophes,10307,781908,4239
+France 2,Culture-loisirs,10845,1254505,5702
+France 2,Economie,14899,1591559,5902
+France 2,Education,3278,365758,2285
+France 2,Environnement,7302,682422,4025
+France 2,Faits divers,6402,504963,3759
+France 2,Histoire-hommages,3387,317734,2037
+France 2,International,24712,1994492,6822
+France 2,Justice,8188,715512,4209
+France 2,Politique France,15642,1492680,5560
+France 2,Santé,8123,844764,3711
+France 2,Sciences et techniques,3112,299235,2315
+France 2,Société,29311,2848467,7113
+France 2,Sport,12120,853028,5510
+France 3,Catastrophes,7227,557037,3562
+France 3,Culture-loisirs,6901,769825,4779
+France 3,Economie,9154,925106,4889
+France 3,Education,1928,208418,1554
+France 3,Environnement,4369,395275,2869
+France 3,Faits divers,5354,414727,3476
+France 3,Histoire-hommages,2368,222612,1569
+France 3,International,14988,1269070,5757
+France 3,Justice,6725,606355,4050
+France 3,Politique France,11284,1049295,5010
+France 3,Santé,5437,544898,3027
+France 3,Sciences et techniques,1772,175690,1505
+France 3,Société,19089,1799341,6675
+France 3,Sport,7187,528044,4107
+M6,Catastrophes,6656,431133,3793
+M6,Culture-loisirs,8884,778533,5653
+M6,Economie,6951,559996,4274
+M6,Education,2274,194850,1797
+M6,Environnement,3565,244231,2597
+M6,Faits divers,6531,432734,4122
+M6,Histoire-hommages,1769,138290,1221
+M6,International,10317,636371,5311
+M6,Justice,6115,404644,3900
+M6,Politique France,8397,636522,4015
+M6,Santé,5566,468580,3034
+M6,Sciences et techniques,2054,159092,1758
+M6,Société,18965,1400193,6762
+M6,Sport,8323,481730,4738
+TF1,Catastrophes,10727,871856,4438
+TF1,Culture-loisirs,11319,1145608,5827
+TF1,Economie,14788,1470262,6118
+TF1,Education,3993,397083,2835
+TF1,Environnement,8707,802999,4536
+TF1,Faits divers,6409,527413,3827
+TF1,Histoire-hommages,3078,287785,1970
+TF1,International,18537,1566228,6188
+TF1,Justice,7644,665927,4159
+TF1,Politique France,13158,1295604,5276
+TF1,Santé,9228,930677,4224
+TF1,Sciences et techniques,3935,385908,2908
+TF1,Société,30785,2834880,7142
+TF1,Sport,12708,992827,5624
