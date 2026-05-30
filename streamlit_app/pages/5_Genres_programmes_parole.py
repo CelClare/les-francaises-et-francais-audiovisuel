@@ -96,6 +96,23 @@ fig_genre.update_layout(
 
 st.plotly_chart(fig_genre, width="stretch")
 
+highest = latest_data.iloc[-1]
+lowest = latest_data.iloc[0]
+
+st.markdown(
+    f"""
+    <div class="section-note">
+    <strong>À retenir :</strong> en {latest_year},
+    <strong>{highest['program_genre']}</strong> présente la part de parole féminine la plus élevée
+    ({highest['women_expression_rate']:.1%}),
+    tandis que <strong>{lowest['program_genre']}</strong> présente la plus faible
+    ({lowest['women_expression_rate']:.1%}).
+    Les écarts observés montrent que tous les genres de programmes ne donnent pas la même visibilité à la parole féminine.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.divider()
 
 # =========================================================
@@ -142,6 +159,23 @@ fig_delta = beautify_plot(fig_delta)
 
 st.plotly_chart(fig_delta, width="stretch")
 
+best = pivot.sort_values("delta", ascending=False).iloc[0]
+worst = pivot.sort_values("delta", ascending=True).iloc[0]
+
+st.markdown(
+    f"""
+    <div class="section-note">
+    <strong>À retenir :</strong>
+    entre 2019 et 2020, la plus forte progression de la part féminine est observée pour
+    <strong>{best.name}</strong> ({best['delta']:.1%}),
+    tandis que la plus forte baisse concerne
+    <strong>{worst.name}</strong> ({worst['delta']:.1%}).
+    Ces évolutions montrent que les écarts de représentation ne sont pas figés et peuvent évoluer rapidement selon les contextes audiovisuels.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.divider()
 
 # =========================================================
@@ -155,6 +189,10 @@ st.markdown(
 st.markdown(
     '<div class="section-note">Ce graphique met en relation le volume global de parole et la part de parole féminine selon les genres de programmes.</div>',
     unsafe_allow_html=True,
+)
+
+corr = latest_data["speech_rate"].corr(
+    latest_data["women_expression_rate"]
 )
 
 fig_scatter = px.scatter(
@@ -185,17 +223,61 @@ fig_scatter = beautify_plot(fig_scatter)
 
 st.plotly_chart(fig_scatter, width="stretch")
 
+if corr > 0.3:
+    interpretation = (
+        "Les genres de programmes où la parole occupe une place importante "
+        "tendent également à présenter davantage de parole féminine."
+    )
+elif corr < -0.3:
+    interpretation = (
+        "Les genres de programmes les plus bavards "
+        "sont aussi ceux où la parole féminine est la plus faible."
+    )
+else:
+    interpretation = (
+        "Aucune relation nette n'apparaît entre le volume global de parole "
+        "et la part de parole féminine."
+    )
+
+col1, col2 = st.columns([1, 3])
+
+with col1:
+    st.metric(
+        "Corrélation",
+        f"{corr:.2f}",
+    )
+
+with col2:
+    st.info(interpretation)
+
 st.divider()
 
 # =========================================================
 # CONCLUSION
 # =========================================================
+
 st.markdown(
     """
     <div class="section-note">
-    <strong>Lecture :</strong> la représentation femmes / hommes ne dépend pas uniquement des chaînes ou des thématiques,
-    mais aussi du type de programme. Certains formats apparaissent plus favorables à la parole féminine, tandis que d’autres
-    restent plus déséquilibrés.
+    <strong>Conclusion :</strong>
+    les écarts de représentation observés ne dépendent pas uniquement des chaînes
+    ou des thématiques. Les genres de programmes apparaissent eux aussi associés
+    à des niveaux très différents de parole féminine. Certains formats s'approchent
+    davantage de l'équilibre tandis que d'autres restent largement dominés par la parole masculine.
+    Cette observation suggère que la forme des programmes joue probablement un rôle important
+    dans la visibilité des femmes à l'écran.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    """
+    <div class="section-note">
+    <strong>Question suivante :</strong>
+    ces différences s'expliquent-elles uniquement par les thématiques et les formats des programmes,
+    ou existe-t-il d'autres facteurs plus fins liés aux contenus eux-mêmes ?
+    La page suivante teste une première hypothèse statistique à partir de la composition thématique des JT.
     </div>
     """,
     unsafe_allow_html=True,

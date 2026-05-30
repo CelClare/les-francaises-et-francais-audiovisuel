@@ -371,3 +371,22 @@ fig_ranking.update_layout(
 )
 
 st.plotly_chart(fig_ranking, width="stretch")
+
+st.divider()
+
+st.info(
+    "Toutes les chaînes ne contribuent pas de la même manière aux écarts observés. "
+    "Certaines se rapprochent davantage de l'équilibre, tandis que d'autres présentent une sous-représentation féminine plus marquée. "
+    "Les différences observées suggèrent que le type de programmation joue un rôle important dans la visibilité de la parole féminine."
+)
+
+st.markdown(
+    """
+    <div class="section-note">
+    <strong>Question suivante :</strong> ces écarts reflètent-ils uniquement des différences entre chaînes,
+    ou sont-ils également liés aux sujets traités dans les journaux télévisés ?
+    La page suivante explore les contextes thématiques dans lesquels cette parole apparaît.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)

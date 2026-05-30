@@ -368,3 +368,25 @@ if not variation_chart.empty:
         """,
         unsafe_allow_html=True,
     )
+
+st.divider()
+
+# =========================
+# Conclusion page 1
+# =========================    
+
+st.info(
+    "Les femmes parlent moins que les hommes sur l’ensemble du corpus. "
+    "L’écart varie selon les catégories de chaînes et les heures de diffusion : "
+    "la parole féminine est plus présente autour de la mi-journée, mais moins visible aux heures les plus exposées."
+)
+
+st.markdown(
+    """
+    <div class="section-note">
+    <strong>À retenir :</strong> les écarts de parole ne sont pas seulement globaux.
+    Ils varient selon le moment de diffusion et le type de chaîne. La page suivante examine quelles chaînes contribuent le plus à ces déséquilibres.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)

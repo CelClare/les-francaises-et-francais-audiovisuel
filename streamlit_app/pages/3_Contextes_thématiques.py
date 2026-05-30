@@ -385,3 +385,20 @@ if not jt_theme_volatility.empty:
         """,
         unsafe_allow_html=True,
     )
+
+st.divider()  
+
+st.info(
+    "Les journaux télévisés ne traitent pas tous des mêmes sujets et ces équilibres évoluent au fil du temps. "
+    "Certaines thématiques occupent une place structurelle dans l’information, tandis que d’autres fluctuent fortement selon l’actualité et les événements exceptionnels."
+)
+
+st.markdown(
+    """
+    <div class="section-note">
+    <strong>Question suivante :</strong> ces différences de contextes éditoriaux sont-elles associées à des écarts de représentation femmes / hommes ?
+    La page suivante met en regard les thématiques des JT et la part féminine observée.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)

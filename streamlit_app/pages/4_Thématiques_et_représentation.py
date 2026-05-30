@@ -159,68 +159,20 @@ col4.metric(
 st.divider()
 
 # =========================================================
-# 3. CE QUE CETTE EXPLORATION PERMET — ET NE PERMET PAS ENCORE
+# Conclusion de l’exploration
 # =========================================================
-st.markdown(
-    '<div class="section-title">Ce que cette exploration permet</div>',
-    unsafe_allow_html=True,
+st.info(
+    "Les écarts de représentation ne semblent pas distribués uniformément selon les contextes thématiques. "
+    "Certaines thématiques apparaissent plus fréquemment dans des contextes où la part féminine moyenne est élevée, "
+    "tandis que d'autres sont associées à des niveaux plus faibles."
 )
-
-col_a, col_b, col_c = st.columns(3)
-
-with col_a:
-    st.markdown(
-        """
-        <div style="background:white; padding:18px; border-radius:18px; border:1px solid rgba(61,64,91,0.08); min-height:210px;">
-            <div style="font-weight:700; font-size:1.05rem; color:#3D405B; margin-bottom:0.7rem;">Ce que l’on observe</div>
-            <div style="color:#5E503F; line-height:1.7;">
-                • des écarts de représentation selon les contextes éditoriaux<br>
-                • des hiérarchies thématiques différentes selon l’échelle d’observation<br>
-                • des associations possibles entre poids d’un thème et représentation moyenne
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-with col_b:
-    st.markdown(
-        """
-        <div style="background:white; padding:18px; border-radius:18px; border:1px solid rgba(61,64,91,0.08); min-height:210px;">
-            <div style="font-weight:700; font-size:1.05rem; color:#3D405B; margin-bottom:0.7rem;">Ce que l’on ne peut pas conclure</div>
-            <div style="color:#5E503F; line-height:1.7;">
-                • qu’un thème est directement “féminin” ou “masculin”<br>
-                • que les femmes parlent davantage à l’intérieur d’un sujet précis<br>
-                • qu’une relation causale existe entre thème traité et temps de parole
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-with col_c:
-    st.markdown(
-        """
-        <div style="background:white; padding:18px; border-radius:18px; border:1px solid rgba(61,64,91,0.08); min-height:210px;">
-            <div style="font-weight:700; font-size:1.05rem; color:#3D405B; margin-bottom:0.7rem;">Pistes d’amélioration</div>
-            <div style="color:#5E503F; line-height:1.7;">
-                • accéder à une granularité plus fine au niveau du sujet<br>
-                • relier thème, segment audiovisuel et temps de parole<br>
-                • enrichir l’analyse avec audio, transcription ou segmentation automatique
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-st.divider()
 
 st.markdown(
     """
     <div class="section-note">
-    <strong>Conclusion :</strong> cette page montre les limites d’un croisement indirect entre thèmes des JT et part féminine moyenne.
-    Pour aller plus loin, la page suivante mobilise un autre jeu de données : les genres de programmes, qui permettent
-    d’approcher plus directement les contextes dans lesquels la parole féminine est mesurée.
+    <strong>À retenir :</strong> la structure éditoriale des JT semble jouer un rôle dans les écarts observés.
+    Les thématiques ne permettent toutefois pas à elles seules d'expliquer qui parle ni dans quel rôle.
+    La page suivante explore une autre dimension du contexte audiovisuel : les genres de programmes.
     </div>
     """,
     unsafe_allow_html=True,

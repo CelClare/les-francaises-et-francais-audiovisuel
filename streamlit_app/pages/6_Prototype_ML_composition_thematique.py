@@ -9,7 +9,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 from utils import inject_global_css, load_data, beautify_plot
 
 st.set_page_config(
-    page_title="Prototype ML : composition thématique",
+    page_title="Tester l'influence de la composition thématique",
     layout="wide",
 )
 
@@ -31,7 +31,7 @@ inject_global_css()
     csa_program_genres,
 ) = load_data()
 
-st.title("Prototype ML : composition thématique et part féminine")
+st.title("Les thématiques expliquent-elles les écarts observés ?")
 
 st.markdown(
     '<div class="subtitle">Cette page teste une question exploratoire : la composition thématique des JT permet-elle d’expliquer une partie des variations de la part féminine moyenne selon les chaînes et les années ?</div>',
@@ -39,7 +39,8 @@ st.markdown(
 )
 
 st.info(
-    "Ce prototype n’est pas un modèle prédictif fiable. Il sert à tester l’existence éventuelle d’un signal statistique dans les données."
+    "Cette analyse explore dans quelle mesure la composition thématique des JT est associée à la part féminine moyenne observée. "
+    "L'objectif n'est pas de prévoir le futur mais de tester si les thèmes contiennent un signal explicatif."
 )
 
 # Jointure thème × genre
@@ -114,3 +115,33 @@ fig.update_yaxes(tickformat=".0%")
 
 fig = beautify_plot(fig)
 st.plotly_chart(fig, width="stretch")
+
+st.divider()
+
+# =========================================================
+# CONCLUSION
+# =========================================================
+
+st.markdown(
+    f"""
+    <div class="section-note">
+    <strong>À retenir :</strong> le modèle obtient un R² de {r2:.2f}.
+    Cela signifie que la composition thématique contient un signal associé à la représentation féminine,
+    mais qu'elle ne suffit pas à expliquer à elle seule les écarts observés entre chaînes et années.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    """
+    <div class="section-note">
+    <strong>Question suivante :</strong>
+    si les thématiques n'expliquent qu'une partie des écarts observés,
+    faut-il descendre à une échelle plus fine ?
+    Une analyse des contenus audiovisuels eux-mêmes — segmentation, transcription
+    et mesure automatique du temps de parole — constitue une piste prometteuse.
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
