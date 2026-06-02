@@ -2,6 +2,11 @@
 
 Projet data d’analyse de l’information télévisée en France à partir de données ouvertes publiées par l’INA.
 
+## Liens
+
+- Application Streamlit : https://les-francaises-et-francais-audiovisuel.streamlit.app
+- Réutilisation data.gouv.fr : https://www.data.gouv.fr/reuses/les-francaises-et-les-francais-face-a-linformation
+
 ## Objectifs
 - analyser la répartition thématique des journaux télévisés ;
 - analyser la représentation femmes / hommes dans les contenus télévisés.
